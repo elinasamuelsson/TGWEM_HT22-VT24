@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- xhtml för fortsatt övning av bra syntax - strikt och tillåter inga fel-->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv-SE" lang="sv-SE">
+  <!-- hemsidans språk satt till svenska eftersom nedan text kommer från
+     en svensk lorem ipsum-generator -->
+
+  <head>
+    <title>Elina Samuelsson</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <!-- meta charset för att berätta vilka tecken som ska användas på vår hemsida -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- meta viewport för att se till att hemsidan skalar ordentligt på alla enheter -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700"
+    />
+    <!-- länkar till Dancing Script google font, lagda ovanför main.css
+         för att dem ska hittas innan och appliceras in i huvudstilmallen -->
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <!-- eftersom sidan är skriven i xhtml går det inte att använda sig av 
+         semantiska taggar därav divvar med class header och nav. Detsamma 
+         gäller nedan även nedan divvar med klass main, asideHund, asideKatt och footer -->
+        <h1>Elina Samuelsson</h1>
+        <ul>
+          <li>
+            <a href="index.html" title="Hem" id="activeLink">Hem</a>
+            <!-- id activeLink för att specifiera med hjälp av CSS att detta
+                 är sidan vi befinner oss på just nu -->
+          </li>
+          <li>
+            <a href="processAnalys.html" title="Processanalys">Processanalys</a>
+          </li>
+        </ul>
+        <!-- list-tagg för struktur och tillgänglighet -->
+      </div>
+      <p>
+        Coding and cathedrals are much the same -<br />
+        <!-- br-tagg för att göra ett enkelt radbryt snarare än att använda 
+             två paragrafer här -->
+        first we build them, then we pray.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <!-- wrapper runt div main och båda div asides för att kunna applicera
+         flexbox i css:en -->
+      <div class="main">
+        <img src="bilder/elina.jpg" alt="bild på Elina" />
+        <!-- alltid alt-attribut i bilder ifall bilden inte laddar samt för
+             tillgänglighetsskäl -->
+        <p>
+          Löksås ipsum sitt varit som björnbär ska nya ska, sista sax björnbär
+          vemod söka verkligen ser dimma, och att sin sjö där mot faktor.
+          Dimmhöljd hans annan trevnadens varit sista regn ännu själv det mjuka,
+          där sjö att ännu häst i kanske annan bra.
+        </p>
+        <p>
+          Icke ska regn denna hans blev tid därmed häst, när ser miljoner stora
+          faktor har icke kan mot, icke groda kan fram enligt på rot. Icke sista
+          plats brunsås dock dunge regn omfångsrik, dock söka i gamla sjö
+          omfångsrik, rot hans vid omfångsrik olika räv.
+        </p>
+        <p>
+          Tidigare strand dimma att smultron söka om olika vid, ordningens av
+          dimma kan har brunsås enligt räv, sista och vad och inom för tidigare.
+          Bland vad verkligen själv tiden olika både när där tidigare gör, nu
+          flera enligt del söka vidsträckt upprätthållande ska åker på sorgliga,
+          tre år därmed bra häst icke lax åker jäst.
+        </p>
+        <!-- textstycken separerade i separata p-taggar för läsbarhet och för
+             att i desktop mode kunna göra den översta paragrafen i varje div 
+             något större än övrig text -->
+      </div>
+      <div class="asideHund">
+        <img src="bilder/pollux.jpg" alt="bild på vit hund" />
+        <p>
+          Verkligen annat olika rännil annan stora bland dock, smultron
+          verkligen när erfarenheter trevnadens verkligen sin både, strand vad
+          hav trevnadens sista i. Själv upprätthållande dag tre omfångsrik där
+          olika. Sällan av det erfarenheter, vidsträckt vi söka regn kan som.
+        </p>
+        <p>
+          Stora vid mot därmed oss samtidigt att trevnadens sista som sin
+          bäckasiner, genom stig trevnadens fram redan dock där häst och
+          bäckasiner. Omfångsrik olika trevnadens där mot så sista och tre och
+          som ta där sax och, varit upprätthållande bland kunde omfångsrik.
+        </p>
+        <p>
+          När rännil åker nu göras i både som, björnbär regn kan ordningens som
+          brunsås verkligen ingalunda, så sjö helt färdväg sin ser. Del på år
+          blev att från hans kanske strand helt om sig där genom omfångsrik,
+          åker vid i färdväg därmed tid dunge groda det ordningens och denna.
+        </p>
+      </div>
+
+      <div class="asideKatt">
+        <img src="bilder/bosse.jpg" alt="bild på grå katt" />
+        <p>
+          Räv vidsträckt kunde olika sax på brunsås, dimma sax sorgliga dimma
+          räv sitt, enligt från enligt som i. Bland ingalunda söka redan på nu
+          nya häst själv, har färdväg och annat kunde att vi stig kunde, därmed
+          björnbär sorgliga händer hela bäckasiner se.
+        </p>
+        <p>
+          Upprätthållande vemod nu äng trevnadens strand och på gamla ska sin
+          samtidigt, brunsås där gör göras sax flera lax vid fram kanske, blivit
+          omfångsrik därmed björnbär precis dimma smultron groda inom mot. Från
+          ser stora mot upprätthållande smultron sin samma när icke nya vemod,
+          som där hwila groda dag kan om dimma tre.
+        </p>
+        <p>
+          Av från gamla ta sig kanske icke ska dunge, har färdväg precis ta kom
+          inom hwila dunge, stig groda kan ser sällan därmed sin. Kanske vi
+          sällan redan tre, hela det verkligen vi nya, denna händer sorgliga.
+        </p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <!-- div runt footer, samt runt varje underkategori för att kunna applicera flexbox
+         i CSS:en -->
+      <div id="footerTelefon">
+        <h3>Telefon</h3>
+        <p>070 - 12 34 567</p>
+        <p>070 - 98 76 543</p>
+        <!-- valt att inte använda lista eftersom jag inte hittar något stöd för
+             att detta förbättrar semantiken -->
+      </div>
+      <div id="footerAdress">
+        <h3>Adress</h3>
+        <address>Bäckgatan 15</address>
+        <address>352 30 Växjö</address>
+        <!-- address-taggen finns i XHTML och jag använder den därför här för att
+             specifiera att detta är en adress -->
+      </div>
+      <div id="footerEpost">
+        <h3>Epost</h3>
+        <p>
+          <a href="mailto:info@fejk.se">info@fejk.se</a>
+          <!-- mailto-länkar för besökarens bekvämlighet -->
+        </p>
+        <p>
+          <a href="mailto:ekonomi@fejk.se">ekonomi@fejk.se</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

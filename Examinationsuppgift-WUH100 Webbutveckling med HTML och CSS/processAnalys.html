@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="sv-SE" lang="sv-SE">
+  <head>
+    <title>Elina Samuelsson</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700"
+    />
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="nav">
+        <h1>Elina Samuelsson</h1>
+        <ul>
+          <li>
+            <a href="index.html" title="Hem">Hem</a>
+          </li>
+          <li>
+            <a href="processAnalys.html" title="Processanalys" id="activeLink">
+              Processanalys</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p>
+        Coding and cathedrals are much the same -<br />
+        first we build them, then we pray.
+      </p>
+    </div>
+
+    <div class="wrapper">
+      <div class="main">
+        <!-- återanvänder klassen main eftersom detta är huvudinnehållet på denna sida -->
+        <img
+          src="bilder/unsplashWriting.jpg"
+          alt="bild på penna och skrivblock"
+        />
+        <h2>Processanalys</h2>
+        <h3>HTML</h3>
+        <p>
+          Hemsidan är skriven i XHTML Strict. XHTML Strict ställer höga krav på
+          kodaren eftersom inga syntaxfel tillåts för lyckad parsing (Coxhead,
+          2009). Det är således bra övning för en student då det lär ut bra
+          rutiner inför framtiden (Bernhardsson, u.å.).
+        </p>
+        <h4>Fonter</h4>
+        <p>
+          Sidans egna typsnitt finns i head-taggen, inlänkade från Google Fonts
+          genom en serie link-taggar genererade av Google. Valet att lägga
+          fonterna i link-taggar snarare än som @import i CSS-filen handlar om
+          landningshastigheten. På hemsidan GifOfSpeed (u.å.) hävdar man att
+          användandet av @import över andra alternativ riskerar att hemsidan
+          laddar långsammare på grund av hur webbläsare tolkar kommandot. Även
+          Steve Souders (2009) understryker i sin blogg att man bör undvika
+          @import efter en serie tester han genomfört. Istället rekommenderar
+          han användandet av link, också av laddningshastighetsskäl.
+        </p>
+        <h4>Länkar</h4>
+        <p>
+          En majoritet av länkarna på sidan, både för navigation och för bilder
+          är relativa. Detta sparar tid vid kodning, men ger också något
+          snabbare laddning av hemsidor (seoClarity, 2019). seoClarity påpekar
+          dock att man med relativa länkar bland annat riskerar att få sin sida
+          skrapad och uppladdad i sin helhet på en annan domän, något som en
+          absolut länk förebygger. En absolut länk istället för en relativ
+          förhindrar också att webbsidans innehåll dupliceras vid
+          sökmotorindexering eftersom det då bara finns ett sätt att tolka
+          länken (ibid).
+        </p>
+
+        <p>
+          Slutsatsen de drar är att man för sökmotoroptimeringens skull bör
+          använda sig av absoluta länkar, men att det inte finns en fast
+          standard och att valet faller på kodaren (ibid). Eftersom denna
+          hemsida inte är ämnad att synas på internet passar relativa länkar
+          bäst för mig som kodare.
+        </p>
+        <h3>Semantik och struktur</h3>
+        <p>
+          Då texten är skriven i XHTML finns inte möjligheten att använda
+          semantiska taggar, används istället div-taggar med semantiska klasser
+          för att senare underlätta i CSS-en.
+        </p>
+        <h4>Menyn</h4>
+        <p>
+          Sidans meny är strukturerad i en punktad lista. Listor är ett bra
+          alternativ för att semantiskt märka upp menyns struktur (W3C Web
+          Accessibility Initiative, 2017). Det gör menyn anpassningsbar till
+          olika situationer, såsom skärmstorleken, men också för olika
+          tillgänglighetsverktyg.
+        </p>
+        <p>
+          Om ordningen på de olika listalternativen inte är av större vikt
+          rekommenderar W3C användandet av en punktad lista. Spelar ordningen
+          däremot stor roll, som i W3Cs egna exempel instruktionsmanualen, bör
+          man använda en numrerad lista (ibid).
+        </p>
+        <h4>Flex vs grid</h4>
+        <p>
+          Till layouten har jag valt att lyssna på Robin Rendles (2021) åsikt
+          kring floats gentemot grid eller flexbox. Floats är numera en
+          utdaterad metod att bygga en hemsidas layout, även om kommandot har
+          flera användbara funktioner i övrigt.
+        </p>
+        <p>
+          När valet står mellan flexbox och grid är det funktionen man ska ta
+          hänsyn till, detta kan vi läsa i MDN Web Docs (2022):
+        </p>
+        <blockquote>
+          <p>A simple question to ask yourself when deciding between grid or
+          flexbox is:</p>
+          <ul>
+            <li>
+              do I only need to control the layout by row or column - use a
+              flexbox
+            </li>
+            <li>
+              do I need to control the layout by row and column - use a grid.
+            </li>
+          </ul>
+        </blockquote>
+        <p>
+          Eftersom projektet är en relativt simpel design som endast kommer att
+          ha en rad/en kolumn flexbox det alternativ som passar denna hemsida
+          bäst.
+        </p>
+        <h4>Mobile first</h4>
+        <p>
+          CSS-koden är skriven med mobile first i åtanke. Om man följer
+          statistiken visar den att fler svenskar surfar via mobilen än på
+          surfplatta eller dator (Internetstiftelsen, 2021). En artikel på
+          hemsidan Perficient visar att denna användartrend även finns på den
+          globala marknaden (Enge, 2021). Mobile first är då en bra startpunkt
+          som man sedan kan arbeta upp till större format.
+        </p>
+        <p>
+          Statistiken stödjer dock inte alltid mobile first-konceptet. På Toomba
+          (2019), en spansk-nederländsk webbyrå kan man läsa att i
+          B2B-sammanhang används fortfarande desktop-formatet mest.
+        </p>
+        <p>
+          Man kan därför dra slutsatsen att vilken designstil man bör använda
+          sig inte är skrivet i sten. Till varje projekt bör man därför se över
+          vilken användarbas man designar för och vilket format dem föredrar,
+          och utveckla designen därifrån.
+        </p>
+        <p>
+          Ahmad Shadeed (2021) har intressanta argument för en blandad approach.
+          Han menar då att man först fokuserar på basstilen för att sedan tänka
+          på hur denna påverkar det mindre, och det större, formatet. Bland
+          annat minskar detta antalet överskrivna linjer kod och optimerar
+          koden, och därmed hur väl koden tolkas.
+        </p>
+        <p>
+          Som nybörjare kan det dock vara svårt att se hela projektet från ett
+          fågelöga på detta sätt och jag väljer därför att använda en fast
+          startpunkt i form av mobile first.
+        </p>
+        <h4>Brytpunkter</h4>
+        <p>
+          Brytpunkterna för sidans design är satta till 768 pixlar för mindre
+          skärmar, och 1024 pixlar för större skärmar. Allt under 768 pixlar
+          tillhör mobilt och surfplatteläge. Dessa brytpunkter föreslås av bland
+          annat bloggare på Browserstack (2022) och Lambdatest (2021).
+        </p>
+        <p>
+          Både författaren på Browserstack och Lambdatest rekommenderar
+          innehållsbaserade brytpunkter som det bättre alternativet då man på
+          detta vis undviker att behöva arbeta om koden varje gång nya enheter
+          släpps, som man annars måste göra med enhetsbaserade brytpunkter.
+          Hastigheten med vilken nya enheter släpps gör detta format nästintill
+          ohållbart (ibid).
+        </p>
+        <p>
+          Ett par alternativ tillhörande den enhetsbaserade kategorin är att
+          antingen bara välja dem mest populära enheterna enligt
+          besöksstatistiken och fokusera på CSS:en för dessa, eller att gruppera
+          enheter enligt mer generella storlekar.
+        </p>
+        <p>
+          Jag har valt att använda mig av den sistnämnda subkategorin av
+          anledningen att dem sätter bra riktlinjer att följa för varje format
+          där det vanligtvis finns en brytpunkt.
+        </p>
+        <h3>CSS</h3>
+        <p>
+          Diskussionerna bland branschkunniga på internet kring huruvida man bör
+          använda sig av en eller flera CSS-filer till sin hemsida är många och
+          delade. Det finns inte heller någon trovärdig källa som pekar åt
+          endera håll.
+        </p>
+        <p>
+          Äldre inlägg verkar peka mot en CSS-fil då man vid tidpunkten inte
+          kunde ladda in mer än en fil till sidan åt gången, men forumanvändarna
+          påpekar även att små sidor fortfarande kan dra fördel av en enstaka
+          CSS-fil.
+        </p>
+        <p>
+          Nyare inlägg och korrigeringar i gamla inlägg påpekar dock att
+          webbläsare idag kan ladda ner fler än en fil åt gången och att antalet
+          CSS-filer, om sorterade korrekt, faktiskt kan ge intryck av snabbare
+          laddning. En användare föreslår till exempel att man lägger stilar
+          specifika till innehållet ovan startsidans fold i en egen fil högt upp
+          i kaskaden för att ge övrig kod tid att ladda medan hemsidebesökaren
+          är upptagen med att kolla på startsidans innehåll.
+        </p>
+        <h4>CSS Reset</h4>
+        <p>
+          I main.css ligger en CSS Reset för att nollställa eventuella
+          skillnader i olika webbläsares inbyggda stilmallar. Även om dem vid
+          ett första ögonkast inte ser ut att göra stor skillnad kan den
+          ackumulerade skillnaderna i slutändan göra hemsidan oläslig. Detta är
+          ännu mer märkbart i mobilt läge. Om man lägger in en återställning har
+          man en jämn kanvas där alla webbläsare kommer att visa hemsidan på
+          samma sätt (Roi, 2019).
+        </p>
+        <p>
+          En nackdel som diskuteras i artikeln är att detta skapar onödig
+          repetition, något man gärna vill undvika eftersom repetition av kod
+          kan bli tidskrävande och göra laddning av sidan långsammare. Enligt
+          Roi väger dock fördelarna tyngre och rekommenderar att man alltid
+          använder sig av en CSS reset (ibid).
+        </p>
+        <h4>Shorthand</h4>
+        <p>
+          På rekommendation av en text på sidan CSS Wizardry (Roberts, 2016) har
+          jag valt att sparsamt använda mig av shorthand, och enbart gällande
+          margins, padding och borders där det är relevant att ställa in dessa i
+          alla riktningar. Till synes är shorthand snabbt och smidigt, men
+          Roberts menar att man med endast ett fåtal undantag får mer precis kod
+          och undviker att av misstag skriva över tidigare kommandon genom att
+          skriva kod fullt ut.
+        </p>
+        <h2>Källor</h2>
+        <p>
+          Bernhardsson, P. (u.å.). <em>XHTML eller HTML5.</em> [Video online]
+          Tillgänglig:
+          <a href="https://youtu.be/sMKjzP9_Xvc"
+            >https://youtu.be/sMKjzP9_Xvc</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Bose, S. (2022).
+          <em>What are CSS Breakpoints and Media Query Breakpoints.</em>
+          Browserstack. Tillgänglig:
+          <a
+            href="https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints"
+            >https://www.browserstack.com/guide/what-are-css-and-media-query-breakpoints</a
+          >
+          [2022-10-03].
+        </p>
+        <p>
+          Coxhead, P. (2009). <em>Introduction to XHTML.</em> Birmingham:
+          University of Birmingham. Tillgänglig:
+          <a href="https://www.cs.bham.ac.uk/~pxc/web/infoweb/IW-XHTML.html"
+            >https://www.cs.bham.ac.uk/~pxc/web/infoweb/IW-XHTML.html</a
+          >
+          [2022-09-20].
+        </p>
+        <p>
+          Enge, E. (2021). <em>Mobile vs. Desktop Usage in 2020.</em> St. Louis:
+          Perficient, Inc. Tillgänglig:
+          <a
+            href="https://www.perficient.com/insights/research-hub/mobile-vs-desktop-usage"
+            >https://www.perficient.com/insights/research-hub/mobile-vs-desktop-usage</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          GiftOfSpeed. (u.å.). <em>Don't Use CSS @import.</em> Tillgänglig:
+          <a href="https://www.giftofspeed.com/avoid-using-css-import/"
+            >https://www.giftofspeed.com/avoid-using-css-import/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Internetstiftelsen. (2021).
+          <em>Svenskarna och internet 2021.</em> Stockholm: Internetstiftelsen.
+          Tillgänglig:
+          <a
+            href="https://svenskarnaochinternet.se/rapporter/svenskarna-och-internet-2021/"
+            >https://svenskarnaochinternet.se/rapporter/svenskarna-och-internet-2021/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Lambdatest. (2021).
+          <em>How to use CSS Breakpoints for responsive design.</em>
+          Tillgänglig:
+          <a
+            href="https://www.lambdatest.com/blog/how-to-use-css-breakpoints-for-responsive-design/"
+            >https://www.lambdatest.com/blog/how-to-use-css-breakpoints-for-responsive-design/</a
+          >
+          [2022-10-03].
+        </p>
+        <p>
+          MDN Web Docs. (2022).
+          <em>Relationship of grid layout to other layout methods.</em> Mozilla.
+          Tillgänglig:
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout"
+            >https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Rendle, R. (2021). <em>Is CSS Float deprecated?</em> CSS-Tricks.
+          Tillgänglig:
+          <a href="https://css-tricks.com/is-css-float-deprecated/"
+            >https://css-tricks.com/is-css-float-deprecated/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Roberts, H. (2016).
+          <em>CSS Shorthand Syntax Considered an Anti-Pattern.</em>
+          CSS Wizardry. Tillgänglig:
+          <a
+            href="https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/"
+            >https://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/</a
+          >
+          [2022-10-17].
+        </p>
+        <p>
+          Roi, M. (2019.)
+          <em
+            >A Tale of CSS Resets and Everything You Need To Know About Them.
+            Revisited.</em
+          >
+          Medium. Tillgänglig:
+          <a
+            href="https://medium.com/weekly-webtips/a-tale-of-css-resets-and-everything-you-need-to-know-about-them-781849d9b7f2"
+            >https://medium.com/weekly-webtips/a-tale-of-css-resets-and-everything-you-need-to-know-about-them-781849d9b7f2</a
+          >
+          [22-10-17].
+        </p>
+        <p>
+          seoClarity. (2019).
+          <em
+            >What is the difference between a relative and an absolute URL?</em
+          >
+          Buffalo Grove: seoClarity. Tillgänglig:
+          <a
+            href="https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/"
+            >https://www.seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/</a
+          >
+          [2022-09-26].
+        </p>
+        <p>
+          Shadeed, A. (2021).
+          <em>The state of mobile first and desktop first.</em>
+          Tillgänglig:
+          <a
+            href="https://ishadeed.com/article/the-state-of-mobile-first-and-desktop-first/"
+            >https://ishadeed.com/article/the-state-of-mobile-first-and-desktop-first/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Souders, S. (2009). <em>Don't Use @import.</em> Tillgänglig:
+          <a
+            href="https://www.stevesouders.com/blog/2009/04/09/dont-use-import/"
+            >https://www.stevesouders.com/blog/2009/04/09/dont-use-import/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          Toomba. (2019). <em>Mobile or desktop first design?</em> Lelystad:
+          Toomba.
+          <a href="https://toomba.com/en/blogs/mobile-or-desktop-first-design/"
+            >https://toomba.com/en/blogs/mobile-or-desktop-first-design/</a
+          >
+          [2022-09-22].
+        </p>
+        <p>
+          W3C Web Accessibility Initiative. (2017).
+          <em>Menu Structure.</em> Tillgänglig:
+          <a href="https://www.w3.org/WAI/tutorials/menus/structure/"
+            >https://www.w3.org/WAI/tutorials/menus/structure/</a
+          >
+          [2022-09-23].
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <div id="footerTelefon">
+        <h3>Telefon</h3>
+        <p>070 - 12 34 567</p>
+        <p>070 - 98 76 543</p>
+      </div>
+      <div id="footerAdress">
+        <h3>Adress</h3>
+        <address>Bäckgatan 15</address>
+        <address>352 30 Växjö</address>
+      </div>
+      <div id="footerEpost">
+        <h3>Epost</h3>
+        <p>
+          <a href="mailto:info@fejk.se">info@fejk.se</a>
+        </p>
+        <p>
+          <a href="mailto:ekonomi@fejk.se">ekonomi@fejk.se</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
