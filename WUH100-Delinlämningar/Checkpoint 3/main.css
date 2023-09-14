@@ -1,0 +1,123 @@
+/* Table of contents:
+1. CSS Reset
+2. Local imported fonts
+3. Page layout
+4. Page styling */
+
+/* 1. CSS Reset 
+   from http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain) */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* 2. Local font styles */
+
+@font-face {
+  font-family: "Museo Sans";
+  src: url("museoSans/MuseoSans_500-webfont.woff2") format("woff2"),
+       url("museoSans/MuseoSans_500-webfont.woff") format("woff");
+}
+
+/* 3. Page layout */
+
+.wrapper {
+  margin: 20px auto;
+  max-width: 960px;
+  max-height: fit-content;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+}
+
+.main {
+  width: 576px;
+  padding: 12px;
+  float: left;
+}
+
+.sidebar {
+  width: 326px;
+  padding: 12px;
+  margin-left: 10px;
+  float: right;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  clear: both;
+  padding: 12px;
+}
+
+/* 4. Page styling */
+
+body {
+  font: normal 14px/1.2em Helvetica, Arial, sans-serif;
+  color: #222;
+  text-align: justify;
+  background-color: #eee;
+}
+
+h1 {
+  font: normal 28px/1.2em 'Museo Sans', Helvetica, sans-serif;
+  color: #009;
+  margin-top: 10px;
+  text-align: center;
+}
+
+h2 {
+  font: bold 16px/1.2em 'Roboto Condensed', Helvetica, sans-serif;
+  color: #009;
+  margin-bottom: 15px;
+}
+
+p + h2 {
+  margin-top: 20px;
+}
+
+p {
+  margin-bottom: 7px;
+}
+
+.footer p {
+  text-align: center;
+}
+
+a:link {
+  text-decoration: none;
+  color: firebrick;
+}
+
+a:visited {
+  text-decoration: none;
+  color: gray;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: maroon;
+}

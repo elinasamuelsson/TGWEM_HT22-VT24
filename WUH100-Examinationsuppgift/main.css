@@ -1,0 +1,380 @@
+/* Innehållsförteckning
+    CSS Reset
+    Allmän styling
+    Header styling + layout
+    Content styling + layout
+    Footer styling + layout 
+    Media query small screen
+    Media query big screen
+    Media query print */
+
+/* CSS RESET FRÅN http://meyerweb.com/eric/tools/css/reset/ */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+em,
+img,
+strong,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+} /* CSS reset för att ge mer kontroll över koden till mig, plockar bort
+     dem selektorer som inte är användna i html-koden */
+
+/* ALLMÄN STYLING */
+body {
+  font-family: Verdana, Arial, sans-serif;
+  /* verdana som förstahandsval eftersom det är en webbanpassad sans serif */
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  font: normal;
+  background-color: rgba(248, 112, 96);
+} /* bestämmer en enhetlig font över hela sidan som sedan kan ändras där relevant,
+     undviker shorthand här och nedan av bla felsöknings- och läsbarhetsorsaker  */
+
+h1,
+h2 {
+  font-family: "Dancing Script", Verdana, Arial, sans-serif;
+} /* inlänkad font från google till h1 och h2, länkar i HTML-filen */
+
+h1 {
+  font-size: 3.4rem;
+}
+
+h2 {
+  font-size: 2.1rem;
+} /* ändrar enbart storlek för att skilja på h1 och h2 */
+
+h3 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.3rem;
+} /* h3 behåller samma typsnitt som brödtexten (Dancing Script upplevdes
+     ha något sämre läsbarhet i mindre storlek) men är fetstil, kursiv och
+     något större */
+
+h4 {
+  font-weight: bold;
+  font-size: 1.05rem;
+} /* h4 blir endast fetstil och lite lite större */
+
+p {
+  margin-bottom: 0.6rem;
+} /* varje paragraf har lätt margin neråt för att ge luft mellan textstycken */
+
+blockquote {
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
+} /* ingen underline på sidans länkar som standard alternativ */
+
+a:link {
+  color: rgba(43, 65, 98);
+} /* ljusare blå färg till obesökta länkar */
+
+a:visited {
+  color: rgba(24, 40, 63);
+} /* mörkare blå färg till besökta länkar */
+
+a:hover {
+  color: rgba(248, 112, 96, 0.7);
+} /* färg matchar bakgrundsfärgen fast med lätt transparens under hover */
+
+/* HEADER STYLING + LAYOUT */
+.header {
+  text-align: center;
+} /* all text i headern centrerad till skillnad från övrig text*/
+
+.header h1 {
+  display: inline-block;
+  /* inline block för att begränsa h1ans kanter till runt texten snarare än 
+     från sida till sida */
+  line-height: 2.1rem;
+  /* line height för att se till att bokstäverna inte krockar och blir 
+  oläsbar när skärmen är så liten att h1 blir två rader hög */
+  padding: 1.6rem 0.8rem;
+  /* padding för att ge rutan runt h1 ett luftigare intryck */
+  border-radius: 0.3rem;
+  /* rundade kanter på bottenhörnen */
+  background-color: rgba(245, 245, 245, 0.9);
+  /* vit halvtransparent bakgrund till h1ans ruta för läsbarhet specifikt mot
+     små och större skärmar med bildbakgrund */
+}
+
+.nav ul {
+  list-style-type: none;
+  /* inga punkter i nav listan */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  /* för att skjuta ner naven en bit från h1 och ge utrymme neråt */
+}
+
+.nav ul li {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* padding upp och ner för att ge luft mellan list-alternativen */
+}
+
+.nav ul li a {
+  font-size: 1.2rem;
+  /* gör textstorleken något större på länkarna i listalternativen */
+  font-weight: 600;
+  /* tjockare font för att utmärka dessa från övrig text */
+  text-shadow: 0.1rem 0.1rem rgba(245, 245, 245, 0.7);
+  /* textskugga för ökad läsbarhet mot bildbakgrunden, speciellt på mindre skärmar,
+     men väljer att ha skugga överrallt för enhetlighet */
+}
+
+#activeLink {
+  text-decoration: underline;
+} /* sidan vi befinner oss på har underline för tydlighet */
+
+.header p {
+  display: inline-block;
+  /* inline block för att begränsa p till runt texten */
+  font-size: 1.1rem;
+  /* något större font än övrig brödtext */
+  margin-bottom: 5rem;
+  /* margin bottom för att skjuta ner headerns kant till passande plats */
+  padding: 1rem;
+  /* padding för att ge rutan runt p ett luftigare intryck */
+  border-radius: 0.6rem;
+  /* rutan har rundade kanter */
+  background-color: rgba(245, 245, 245, 0.9);
+  /* vit halvtransparent bakgrundsfärg för att öka läsbarheten specifikt mot
+     mindre och större skärmar där det finns en bakgrundsbild */
+}
+
+/* CONTENT STYLING + LAYOUT */
+.wrapper {
+  display: flex;
+  /* argumenterar djupare för flex i uppsats */
+  flex-direction: column;
+  /* kolumn då koden skriv med mobile first i åtanke */
+  background-color: rgba(245, 245, 245, 0.8);
+  /* vit halvtransparent bakgrundsfärg för att skilja på header, 
+     content och footer, halvtransparent för att man ska känna igen färgen från
+     header och footer men inte ha en så stark bakgrundsfärg överallt */
+}
+
+.main,
+.asideHund,
+.asideKatt {
+  position: relative;
+  /* i det här fallet använder jag position relative för att skapa en referens-
+     punkt åt bilderna inom varje div med klasserna ovan, så att bilderna sedan
+     kan positioneras absolut inom dessa */
+  margin: 4rem auto 5rem;
+  /* margin left och right satt till auto för att varje textbubbla ska
+     hållas centrerad på sidan */
+  padding-top: 3rem;
+  /* padding top för att ge utrymme uppåt för bilderna */
+  border: 1px solid rgba(248, 112, 96);
+  /* tunn border för att ge en starkare brytpunkt till textbubblorna */
+  border-radius: 0.4rem;
+  /* rundade kanter för att eka texten i headern, samt bildernas runda utseende */
+  width: 90%;
+  /* vidd satt till 90% för att utnyttja skapa utrymme till sidans kanter */
+  background-color: rgba(245, 245, 245);
+  /* helvit bakgrundsfärg till textbubblorna */
+}
+
+.asideHund,
+.asideKatt {
+  margin-top: 6rem;
+} /* längre utrymme mellan textbubblor för asides än main för att placera 
+     bubblorna korrekt */
+
+.main h2,
+.main h3,
+.main h4,
+.main p,
+.asideHund p,
+.asideKatt p {
+  padding: 0.5rem;
+} /* padding på alla håll till all text i bubblorna. inga asides har h2 eller h3
+     därav är dem utelämnade */
+
+img {
+  position: absolute;
+  /* absolut positionering på bilderna för att kunna bestämma vart dem ska finnas
+     inom respektive div dem ligger i */
+  top: -7rem;
+  /* lätt förskjutning så dem hamnar halvt utanför respektive div */
+  left: 0;
+  right: 0;
+  /* placering höger och vänster satt till 0, korrigeras via automatisk 
+     margin istället för att garantera centrerad placering. utan dessa här fungerar
+     dock inte margin auto */
+  height: 8.1rem;
+  width: 8.1rem;
+  margin-right: auto;
+  margin-left: auto;
+  /* placerar bild centrerad i textbubblan */
+  border: 8px solid rgba(245, 245, 245);
+  border-radius: 50%;
+  /* tjockare vit border runt bilderna och radius ställd så bilden är en cirkel */
+}
+
+/* FOOTER LAYOUT + STYLING */
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* footersektioner positionerade med hjälp av flex. kolumn på mobila enheter
+     då jag tycker att det är bättre för läsbarheten att lägga dem så snarare än att 
+     dra ner på textstorleken för att allt ska få plats */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+  /* centrerad text i mobillayout */
+}
+
+#footerTelefon,
+#footerAdress,
+#footerEpost {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+} /* margin ner och upp för att ge lite luft mellan varje sektion i mobilt läge */
+
+.footer p {
+  margin: 0;
+  padding: 0;
+} /* ändra så att paragraferna är närmare varandra i sidfoten */
+
+address {
+  font-style: normal;
+  text-align: center;
+} /* ändra så att address har samma stil som paragraferna */
+
+/* MEDIA QUERY SMALL SCREEN */
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url("bilder/unsplashDesk.jpg");
+    background-size: 100%;
+    background-position-y: -10rem;
+    /* lägger till och positionerar bakgrund */
+    height: 20rem;
+    /* fast höjd på sidhuvudet på små (och större) skärmar för utseende */
+  }
+
+  .nav ul {
+    display: flex;
+    justify-content: center;
+  } /* display flex för att listalernativen ska ligga horisontellt */
+
+  .nav ul li {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  } /* margin på vardera sida för att det ska vara lika utrymme mellan listalternativen */
+
+  .footer {
+    flex-direction: row;
+    text-align: left;
+  } /* på små och större skärmar får texten plats i en rad */
+
+  #footerTelefon,
+  #footerAdress,
+  #footerEpost {
+    margin-bottom: 0;
+  } /* margin bottom behövs inte längre eftersom sektionerna inte längre ligger
+       ovanpå varandra, finns denna kvar blir det istället ojämt */
+}
+
+/* MEDIA QUERY BIG SCREEN */
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    /* flex för att positionera objekten inom nav */
+    margin-right: 4rem;
+    margin-left: 4rem;
+    /* margin på vardera sida för att skjuta dem en bit från kanterna */
+  }
+
+  .header p {
+    position: absolute;
+    top: 8rem;
+    right: 18rem;
+    text-align: left;
+  } /* absolut positionerad paragraf för att den ska ligga på rätt plats */
+
+  .nav ul li {
+    margin-left: 3rem;
+  } /* margin left för att skapa utrymme mellan listalternativen utan
+       att flytta dem ytterligare från kanten */
+
+  .wrapper {
+    flex-direction: row;
+    justify-content: center;
+    /* eftersom flex redan finns på wrapper sedan tidigare byter jag endast riktning */
+    padding-right: 5rem;
+    padding-left: 5rem;
+    /* padding för att se till att det finns luft ut mot kanterna */
+  }
+
+  .main,
+  .asideHund,
+  .asideKatt {
+    width: 95%;
+    margin: 4rem 1rem 5rem;
+  } /* bestämmer storlek på textbubblorna */
+
+  .main {
+    order: 2;
+  }
+
+  .asideHund {
+    order: 1;
+  }
+
+  .asideKatt {
+    order: 3;
+  } /* bestämmer visningsordningen på textbubblorna från vänster till höger, main #2
+       så att den sorteras i mitten och asides #1 och #3 för att dem ska sorteras till
+       sidorna */
+
+  .asideHund img {
+    margin-right: auto;
+    margin-left: 1.5rem;
+  } /* positionerar om bild uppe till vänster */
+
+  .asideKatt img {
+    margin-right: 1.5rem;
+    margin-left: auto;
+  } /* positionerar om bild uppe till höger */
+
+  img + p {
+    font-size: 1.1rem;
+  } /* paragrafer direkt följande en bild får större textstorlek */
+}
+
+/* MEDIA QUERY PRINT */
+@media print {
+  body p {
+    font-family: Georgia, "Times New Roman", serif;
+  } /* ställer text till något som anses mer lästbart på papper */
+
+  .nav ul {
+    display: none;
+  } /* tar bort navigeringslistan från utskrift men behåller h1 */
+
+  .footer {
+    display: none;
+  } /* tar bort footer från utskrift */
+}
