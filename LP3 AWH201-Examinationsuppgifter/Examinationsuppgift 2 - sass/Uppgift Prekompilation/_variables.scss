@@ -1,0 +1,37 @@
+$black: black;
+$white: white;
+$orange: orange;
+$blue: #306cbd;
+$lightPurple: #9797f7;
+$darkPurple: #6867ab;
+$baseMargin: 5rem;
+
+@mixin width($width: 1280px) {
+  width: $width;
+}
+
+@mixin center {
+  margin: 0 auto;
+}
+
+@mixin displayBlock {
+  display: block;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@mixin flexRow {
+  flex-direction: row;
+}
+
+@mixin flexCol {
+  flex-direction: column;
+}
+
+@mixin border($borderWidth: 3px, $borderType: solid, $borderColor: #306cbd) {
+  border: $borderWidth $borderType $borderColor;
+  border-radius: 10px;
+}

@@ -1,0 +1,75 @@
+// header
+header {
+  @include width;
+  @include center;
+  @include flex;
+  @include flexRow;
+  justify-content: space-between;
+}
+
+nav {
+  margin-top: calc(#{$baseMargin} / 2);
+  a {
+    margin-top: $baseMargin;
+    padding-left: $baseMargin;
+  }
+}
+
+.hero {
+  @include flex;
+  @include flexCol;
+  justify-content: center;
+  margin-top: calc(#{$baseMargin} / 2);
+  margin-bottom: calc(#{$baseMargin} * 2);
+}
+
+.cards {
+  @include width;
+  @include center;
+  @include flex;
+  @include flexRow;
+  justify-content: space-between;
+  margin-bottom: $baseMargin;
+}
+
+.card {
+  margin-bottom: $baseMargin;
+}
+
+main {
+  @include width;
+  @include center;
+  @include flex;
+  @include flexRow;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: $baseMargin;
+}
+
+.offers,
+.sales,
+.references,
+.final {
+  padding: calc(#{$baseMargin} / 2);
+}
+
+.offers {
+  @include width;
+  margin-bottom: .8rem;
+}
+
+.sales,
+.references {
+  @include width(555px);
+  margin-bottom: $baseMargin;
+}
+
+.final {
+  @include width(1200px);
+  @include center;
+  margin-bottom: $baseMargin;
+}
+
+footer {
+    @include width;
+    @include center; }

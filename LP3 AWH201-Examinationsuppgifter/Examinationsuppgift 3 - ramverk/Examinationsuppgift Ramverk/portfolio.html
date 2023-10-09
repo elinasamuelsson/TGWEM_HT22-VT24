@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Examinationsuppgift 3 - Ramverk" />
+    <meta name="author" content="Elina Samuelsson" />
+    <title>Examinationsuppgift 3 - Ramverk</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <!--bootstrap css inlänkning-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!--bootstrap svg ikoner inlänkning-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+    <!--inlänkning google font-->
+
+    <!--START EGEN STYLE-->
+    <style>
+      @font-face {
+        font-family: "Pacifico";
+        src: url(./fonts/Pacifico-Regular.ttf) format("truetype"),
+          url(./fonts/Pacifico-Regular.woff2) format("woff2");
+      }
+      h1 {
+        font-family: "Pacifico", sans-serif;
+      }
+
+      .bi {
+        font-size: 20px;
+        margin-left: 5px; /*ms-3, fs-3 på footer list items fungerar ej, ligger här tills vidare*/
+      }
+    </style>
+    <!--SLUT EGEN TILLAGD STIL-->
+  </head>
+  <body class="bg-light">
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <nav
+      class="container navbar navbar-expand-lg navbar-light bg-light rounded justify-content-between"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><h1>Elina Samuelsson</h1></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample09"
+          aria-controls="navbarsExample09"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarsExample09">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link active dropdown-toggle"
+              href="portfolio.html"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              >Portfolio <span class="sr-only">(current)</span></a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="portfolio.html#photo"
+                  >Photography</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="portfolio.html#video"
+                  >Videography</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="portfolio.html#webb"
+                  >Web design</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <section class="py-5 text-center container bg-light">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h2 class="fw-normal">Portfolio</h2>
+            <p class="lead">
+              Let me in let me out let me in let me out let me in let me out who
+              broke this door anyway ears back wide eyed. At four in the morning
+              wake up owner meeeeeeooww.
+            </p>
+            <p>
+              <a href="contact.html" class="btn btn-primary my-2">Hire me</a>
+              <a href="#" class="btn btn-secondary my-2">Recommend me</a>
+            </p>
+          </div>
+        </div>
+        <hr class="featurette-divider" />
+      </section>
+
+      <div class="album py-5 bg-light" id="photo">
+        <h3 class="fw-normal text-center py-5">Photography</h3>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+            <div class="col mb-3">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC00902.webp"
+                  alt="decorated roof of a temple gateway"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC01206.webp"
+                  alt="colorful shrine wih mountain view"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC01229.webp"
+                  alt="forest view with flying birds"
+                />
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC01275.webp"
+                  height="213"
+                  alt="river running through big city in black and white"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC01429.webp"
+                  height="213"
+                  alt="person on a beach taking photos of the ocean"
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img
+                  src="./images/DSC01604.webp"
+                  alt="buddha statue inside a temple"
+                />
+              </div>
+            </div>
+          </div>
+          <hr class="featurette-divider" />
+        </div>
+      </div>
+      <div class="album py-5 bg-light" id="video">
+        <h3 class="fw-normal text-center py-5">Videography</h3>
+        <div class="container">
+          <div
+            class="row row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center g-3 mb-5"
+          >
+            <div class="card shadow-sm">
+              <video controls>
+                <source src="./images/sequence01.mp4" type="video/mp4" />
+                Video is not supported.
+              </video>
+            </div>
+          </div>
+          <hr class="featurette-divider" />
+        </div>
+      </div>
+      <div class="album py-5 bg-light" id="webb">
+        <h3 class="fw-normal text-center py-5">Web design</h3>
+        <div class="container">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe
+              src="https://webbkurs.ei.hv.se/~elsa0047/AWH201/index.html"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container">
+      <footer
+        class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+      >
+        <div class="col-md-4 d-flex align-items-center">
+          <a
+            href="/"
+            class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
+          >
+            <svg class="bi" width="30" height="24">
+              <use xlink:href="#bootstrap"></use>
+            </svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2023 Elina Samuelsson </span>
+        </div>
+
+        <ul class="nav col-md-4 justify-content-end list-unstyled">
+          <li class="ms-3">
+            <a
+              class="text-muted mx-1"
+              href="mailto:elina.samuelsson@student.hv.se"
+              ><i class="bi bi-envelope"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-muted mx-1"
+              href="https://www.instagram.com/carrotkimchi/"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          </li>
+          <li class="ms-3">
+            <a
+              class="text-muted mx-1"
+              href="https://www.facebook.com/elina.samuelsson/"
+              ><i class="bi bi-facebook"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+/* css reset från http://meyerweb.com/eric/tools/css/reset/ */
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+address,
+img,
+em,
+strong,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+

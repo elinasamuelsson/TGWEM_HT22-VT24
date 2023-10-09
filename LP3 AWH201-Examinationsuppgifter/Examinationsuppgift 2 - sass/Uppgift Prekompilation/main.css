@@ -1,0 +1,409 @@
+/*RESET START*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*RESET END*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: bold;
+}
+
+h2,
+h3 {
+  font-size: xx-large;
+  padding-bottom: 1.5rem;
+}
+
+h3 {
+  letter-spacing: -0.5px;
+}
+
+h4 {
+  font-size: larger;
+  color: orange;
+  padding-bottom: calc(5rem / 5);
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: large;
+  color: #306cbd;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-size: 1.3rem;
+  letter-spacing: 0.05rem;
+}
+
+.offers i,
+.sales i,
+.references i {
+  font-size: xx-large;
+}
+
+.offers,
+.sales,
+.references,
+.final {
+  padding: calc(5rem / 2);
+}
+.offers p,
+.sales p,
+.references p,
+.final p {
+  font-size: larger;
+  line-height: 2rem;
+}
+.offers i,
+.sales i,
+.references i,
+.final i {
+  color: white;
+}
+
+header {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  margin-top: calc(5rem / 2);
+}
+nav a {
+  margin-top: 5rem;
+  padding-left: 5rem;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: calc(5rem / 2);
+  margin-bottom: calc(5rem * 2);
+}
+
+.cards {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+
+.card {
+  margin-bottom: 5rem;
+}
+
+main {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.offers,
+.sales,
+.references,
+.final {
+  padding: calc(5rem / 2);
+}
+
+.offers {
+  width: 1280px;
+  margin-bottom: .8rem;
+}
+
+.sales,
+.references {
+  width: 555px;
+  margin-bottom: 5rem;
+}
+
+.final {
+  width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+footer {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+header img {
+  margin-top: calc(5rem / 4);
+  width: 6rem;
+}
+
+.hero {
+  background: linear-gradient(#dce7f6, #306cbd);
+  height: calc(5rem * 4);
+}
+.hero .callout {
+  padding: 20px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: x-large;
+  text-align: center;
+}
+
+button {
+  text-transform: uppercase;
+  font-size: x-large;
+  font-weight: 600;
+  display: block;
+  margin: 0 auto;
+  width: calc(5rem * 3);
+  height: 5rem;
+  background-color: #ffae1a;
+}
+button:hover {
+  background-color: #996300;
+}
+
+.card {
+  border: 3px solid #306cbd;
+  border-radius: 10px;
+  background-color: #c8d9f1;
+  width: 325px;
+  height: 190px;
+  padding: calc(5rem / 4);
+}
+.card p:nth-child(3) {
+  width: 270px;
+  background-color: white;
+  text-align: center;
+  margin: 65px auto 0;
+  padding: 5px;
+}
+
+.offers {
+  background-color: #9797f7;
+}
+.offers i {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.sales {
+  background: #999999;
+}
+.sales i {
+  position: absolute;
+  top: 16rem;
+  left: 36rem;
+}
+
+.references {
+  background: #6867ab;
+}
+.references i {
+  position: absolute;
+  top: 16rem;
+  right: 1rem;
+}
+
+.final {
+  background: #9fbee7;
+}
+.final i {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 8rem;
+}
+
+footer {
+  background-color: #333333;
+}
+footer .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .wrapper ul {
+  color: white;
+}
+footer .wrapper li {
+  font-size: medium;
+  padding-bottom: 0.5rem;
+  list-style-type: none;
+}
+
+.sitemap,
+.community,
+.company,
+.social {
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: calc(5rem / 5);
+  padding-bottom: 5rem;
+}
+.sitemap a,
+.community a,
+.company a,
+.social a {
+  font-size: larger;
+  color: white;
+  padding-right: 0.5rem;
+}
+.sitemap a:hover,
+.community a:hover,
+.company a:hover,
+.social a:hover {
+  color: orange;
+}
