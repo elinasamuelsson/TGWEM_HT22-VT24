@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lnag="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Övning 17</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+      
+      let alder = parseInt(prompt("Hur gammal är du?"));
+    
+      if (alder <= 14) {
+        document.write("Du får hålla dig till cykel.");
+      }
+
+      else if (alder >= 15 && alder <= 17) {
+        document.write("Du får köra moped.");
+      }
+
+      else if (alder >= 18) {
+        document.write("Du kan ta bilen.");
+      }
+
+      else {
+        const errorMsg = "Något gick fel. Ladda om och försök igen."
+        document.write(errorMsg);
+      }
+
+    </script>
+  </body>
+</html>

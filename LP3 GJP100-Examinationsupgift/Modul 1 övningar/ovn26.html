@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Övning 26</title>
+    </head>
+    <body>
+        <script>
+
+            let poangLista = [parseFloat(prompt("Ange första domarens poäng:")), 
+            parseFloat(prompt("Ange andra domarens poäng:")), 
+            parseFloat(prompt("Ange tredje domarens poäng:")), 
+            parseFloat(prompt("Ange sista domarens poäng:"))];
+            
+            poangLista.sort(function(a, b){return a - b}); 
+            //hjälp från w3schools att hitta lösningen till korrekt sortering: https://www.w3schools.com/js/js_array_sort.asp
+            
+            let resultat = poangLista[1] + poangLista[2];
+            alert(`Totalpoäng (minus högsta, och lägsta, siffran är ${resultat}.`);
+            
+        </script>
+    </body>
+</html>

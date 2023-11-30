@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 13</title>
+  </head>
+  <body>
+    <p>Slumpa ett nummer mellan 0 och 100.</p>
+    <button onclick="slumpatNmr()" style="margin-bottom: 5px">
+      Hämta nummer!
+    </button>
+    <!-- knapp för att starta funktionen som slumpar numret -->
+    <br />
+    <input id="nummerInput" type="text" />
+    <!-- inputruta att lägga det slumpade numret i -->
+    <script type="text/JavaScript">
+
+      function slumpatNmr() {
+      // funktion som slumpar ett nummer
+
+        const nummer = Math.floor(Math.random() * 100);
+        /* deklarerar en variabel vars innehåll är en funktion som slumpar ett 
+           nummer mellan 0-1, multiplicerar det och sedan kör det i ytterligare 
+           en funktion som rundar ner det till närmsta heltal */
+
+        document.getElementById("nummerInput").value = nummer;
+        // skickar vårt färdiga slumpade nummer till textrutan
+
+      }
+    </script>
+  </body>
+</html>

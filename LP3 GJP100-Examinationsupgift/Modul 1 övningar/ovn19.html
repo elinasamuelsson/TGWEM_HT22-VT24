@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 19</title>
+  </head>
+  <body>
+    <form name="kalkyl" action="javascript:kalkyl()" method="get">
+      <label for="pris">Pris</label> <br />
+      <input type="text" id="pris" style="margin-bottom: 5px" /> <br />
+
+      <label for="antal">Antal</label> <br />
+      <input type="text" id="antal" style="margin-bottom: 5px" /> <br />
+
+      <label for="moms">Moms</label> <br />
+      <input type="text" id="moms" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px;">Kalkylera totalpriset!</button> <br />
+
+      <label for="resultatExMoms">Resultat exklusive moms</label> <br />
+      <input type="text" id="resultatExMoms" /> <br>
+      
+      <label for="resultatInkMoms">Resultat inklusive moms</label> <br />
+      <input type="text" id="resultatInkMoms" />
+    </form>
+    <!-- formulär som innehåller en knapp och ett antal textrutor
+         att ta och lämna information i. formuläret är kopplad till 
+         funktionen kalkyl()
+        
+         hjälp från https://www.dofactory.com/html/form/action 
+         att få javaScripten att hämta värden korrekt från formuläret
+         eftersom jag inte lyckades få button onclick att fungera -->
+
+    <script type="text/JavaScript">
+
+      function kalkyl() {
+      // funktion länkad till HTML-formuläret
+
+        const pris = document.getElementById('pris').value,
+        antal = document.getElementById('antal').value,
+        moms = document.getElementById('moms').value;
+        // deklarerar variabler och hämtar nummervärden från formuläret
+
+        const resultatExMoms = pris * antal,
+        // deklarerar variabeln och kalkylerar priset ex moms
+            resultatInkMoms = resultatExMoms * ((moms / 100) + 1);
+        // deklarerar variabeln och kalkylerar pris ink moms
+
+        document.getElementById('resultatExMoms').value = resultatExMoms;
+        document.getElementById('resultatInkMoms').value = resultatInkMoms;
+        // skickar kalkylerade värden till textrutor i formuläret
+      }
+
+    </script>
+  </body>
+</html>

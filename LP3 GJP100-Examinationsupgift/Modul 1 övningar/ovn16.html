@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Övning 16</title>
+  </head>
+  <body>
+    <form name="beraknaPris" action="javascript:kalkPris()" method="get">
+        <!--hjälp från https://www.dofactory.com/html/form/action 
+        att få javaScripten att hämta värden korrekt från formuläret-->
+      <label for="prisPerKilo">Pris per kilo:</label> <br />
+      <input type="text" id="prisPerKilo" style="margin-bottom: 5px" /> <br />
+
+      <label for="vikt">Vikt:</label> <br />
+      <input type="text" id="vikt" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px">Beräkna pris</button>
+      <br />
+
+      <label for="attBetala">Att betala:</label> <br />
+      <input type="text" id="attBetala" style="margin-bottom: 5px" /> <br />
+      <br />
+      <br />
+    </form>
+    <form name="beraknaVaxel" action="javascript:kalkVaxel()" method="get">
+      <label for="betalning">Hur mycket betalar du med?</label> <br />
+      <input type="text" id="betalning" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px">Beräkna växel</button>
+      <br />
+
+      <label for="vaxel">Din växel:</label> <br />
+      <input type="text" id="vaxel" style="margin-bottom: 5px" /> <br />
+    </form>
+    <script type="text/JavaScript">
+
+      let prisPerKilo,
+      vikt,
+      attBetala;
+
+      function kalkPris () {
+        prisPerKilo = parseFloat(document.getElementById("prisPerKilo").value),
+        vikt = parseFloat(document.getElementById("vikt").value),
+        attBetala = prisPerKilo * vikt;
+        document.getElementById("attBetala").value = attBetala;
+      }
+
+      function kalkVaxel () {
+        let betalning = parseFloat(document.getElementById("betalning").value),
+        vaxel = betalning - attBetala;
+        document.getElementById("vaxel").value = vaxel;
+      }
+    </script>
+  </body>
+</html>

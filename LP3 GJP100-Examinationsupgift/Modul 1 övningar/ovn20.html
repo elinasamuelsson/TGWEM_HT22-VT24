@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Övning 20</title>
+    </head>
+    <body>
+        <form>
+            <label for="numberInput">Hur många gånger vill du höra "I'm the best"?</label> <br>
+            <input type="text" id="howManyRepeats">
+            <button onclick="repeatText()">Submit.</button>
+        </form>
+
+        <script type="text/JavaScript">
+
+            function repeatText() {
+                let howManyRepeats = document.getElementById("howManyRepeats").value;
+                parseInt(howManyRepeats);
+
+                for (let count = 0; count < howManyRepeats; ++count) {
+                    alert("I'm the best!");
+                }
+            }
+            
+        </script>
+    </body>
+</html>

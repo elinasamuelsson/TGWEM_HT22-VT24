@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 23</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+      
+      const talA = parseInt(prompt("Skriv in ett första tal.")),
+      talB = parseInt(prompt("Skriv in ett andra tal.")),
+      talC = parseInt(prompt("Skriv in ett sista tal."));
+      /* deklarerar talen genom att skicka en förfrågan till webbsidebesökaren 
+         att ange siffror, och ser till att dem tolkas som heltal med hjälp av
+         parseInt */
+
+      if (talA > talB && talA > talC) {
+        alert(`${talA}, ditt första tal, är störst.`);
+      }
+      // om talA är störst visas detta i en alert-ruta
+
+      else if (talB > talA && talB > talC) {
+        alert(`${talB}, ditt andra tal, är störst.`);
+      }
+      // om talB är störst visas detta i en alert-ruta
+
+      else if (talC > talA && talC > talB) {
+        alert(`${talC}, ditt tredje tal, är störst.`);
+      }
+      // om talC är störst visas detta i en alert-ruta
+      
+      else {
+        alert("Något gick fel, ladda om och försök igen.");
+      }
+      /* om något input inte kan tolkas som en siffra eller något annat
+         går fel visas detta i en alert-ruta */
+
+    </script>
+  </body>
+</html>

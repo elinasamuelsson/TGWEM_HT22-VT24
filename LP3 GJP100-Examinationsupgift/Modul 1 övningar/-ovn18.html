@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Övning 18</title>
+  </head>
+  <body>
+    <script>
+      
+      let slumpatNummer = Math.floor(Math.random() * 10) + 1,
+      gissning = prompt("Gissa på ett heltal mellan 1 - 10."),
+      antalForsok = 0,
+      gissatRatt = false;
+
+      if (slumpatNummer === parseInt(gissning)) {
+        let gissatRatt = true;
+      }
+
+      if (gissatRatt == true) {
+          alert("Grattis, du vann.");
+      }
+
+      else if (gissatRatt == false) {
+          gissning = parseInt(prompt("Fel. Försök igen."));
+          ++antalForsok;
+      }
+
+      else if (gissatRatt == false && antalForsok == 2) {
+          alert(`Tyvärr, du misslyckades. Rätt nummer var ${slumpatNummer}.`)
+      }
+
+    </script>
+  </body>
+</html>

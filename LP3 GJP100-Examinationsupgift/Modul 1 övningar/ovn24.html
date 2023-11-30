@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Övning 24</title>
+  </head>
+  <body>
+    
+    <form name="kalkyl" action="javascript:kalkyl()" method="get">
+      
+      <label for="pris">Pris:</label>
+      <input type="text" id="pris"><br>
+
+      <label for="antal">Antal:</label>
+      <input type="text" id="antal">
+      <button type="submit">Starta uträkning</button>
+    </form>
+ 
+    <script type="text/JavaScript">
+
+      function kalkyl( ) {
+      
+        let pris = parseFloat(document.getElementById("pris").value),
+        antal = parseFloat(document.getElementById("antal").value),
+        summaUtanRabatt = null,
+        summaMedRabatt = null;
+
+        if (pris > 1000 && antal > 20) {
+          summaUtanRabatt = pris * antal;
+          summaMedRabatt = summaUtanRabatt * 0.8;
+          alert(`Total summa: ${summaUtanRabatt}:- \n
+          Rabatterat pris: ${summaMedRabatt}:-`);
+        }
+
+        else if (pris > 1000 && antal < 20) {
+          summaUtanRabatt = pris * antal;
+          summaMedRabatt = summaUtanRabatt * 0.9;
+          alert(`Total summa: ${summaUtanRabatt}:- \n
+          Rabatterat pris: ${summaMedRabatt}:-`);
+        }
+
+        else if (pris < 1000 && antal >20) {
+          summaUtanRabatt = pris * antal;
+          summaMedRabatt = summaUtanRabatt * 0.9;
+          alert(`Total summa: ${summaUtanRabatt}:- \n
+          Rabatterat pris: ${summaMedRabatt}:-`);
+        }
+
+        else {
+          summaUtanRabatt = pris * antal;
+          alert(`Total summa: ${summaUtanRabatt}:-`);
+        }
+      }       
+    </script>
+  </body>
+</html>

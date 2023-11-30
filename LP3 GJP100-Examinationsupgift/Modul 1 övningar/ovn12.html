@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Övning 12</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+
+      let inputA = parseInt(prompt("Välj ett nummer.")),
+      inputB = parseInt(prompt("Välj ett annat nummer.")),
+      action = prompt("Vad vill du göra med siffrorna? + Addera  - Subtrahera  * Multiplicera.");
+
+      switch (action) {
+        case ("+"):
+            let sum = inputA + inputB;
+            document.write(sum);
+            break;
+
+        case ("-"):
+            let diff = inputA - inputB;
+            document.write(diff);
+            break;
+
+        case ("*"):
+            let prod = inputA * inputB;
+            document.write(prod);
+            break;
+
+        default:
+            document.write("Något gick fel.")
+            break;
+      }
+      
+    </script>
+  </body>
+</html>
