@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font Quicksand länkar -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700%26display=swap" rel="stylesheet" />
+
+    <!-- Script and CSS länkar -->
+    <link href="./stilmall.css" rel="stylesheet" />
+    <script type="text/JavaScript" src="./spel.js" defer></script>
+    <!-- eftersom js-koden manipulerar DOM:en är script-filen ställd till defer så att den laddar efter html:en trots att den ligger i head-taggen. Får javascripten ladda innan HTML-koden kommer inte programmet att fungera eftersom elementen den refererar inte "finns" ännu. -->
+    <title>Choose your own adventure!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Slutprojekt i JavaScript av Elina Samuelsson</h1>
+    </header>
+    <main>
+      <p id="textPara"></p>
+      <!-- tom paragraf att skicka texten till -->
+      <div id="knappContainer"></div>
+      <!-- tom div att skicka knapparna till -->
+    </main>
+    <aside>
+      <button id="knappOmstart">Starta om</button>
+      <!-- fast knapp som aldrig förändras för att starta om spelet -->
+    </aside>
+  </body>
+</html>

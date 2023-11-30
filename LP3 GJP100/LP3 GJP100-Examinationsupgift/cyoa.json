@@ -1,0 +1,102 @@
+[
+  {
+    "id": "start",
+    "text": "Du är en ung, aspirerande hjälte på jakt efter ett äventyr. En stunds promenad bort från din hemstad står du vid ett vägskäl. En skylt pekar västerut, mot en skog. Den andra pekar österut, mot en bergskedja. Vart vill du gå?",
+    "val": [
+      { "text": "Skogen", "nasta": "skogen" },
+      { "text": "Bergen", "nasta": "bergen" }
+    ]
+  },
+  {
+    "id": "skogen",
+    "text": "Du väljer att gå mot skogen, då bergen ser karga och ovälkomnande ut. \n \n Du följer skogsstigen i timmar innan något fångar din uppmärksamhet. Mellan träden skymtar du en glänta, och i gläntan en stuga. Samtidigt som du får syn på stugan kurrar det i din mage och du inser att du är hungrig - men du packade ingen mat innan du lämnade ditt hem.",
+    "val": [
+      { "text": "Knacka på", "nasta": "knacka" },
+      { "text": "Smyg in", "nasta": "smyg" }
+    ]
+  },
+  {
+    "id": "smyg",
+    "text": "Du, precis som alla andra från din hemstad, har hört historierna om en häxa som bor i skogen och du vågar inte knacka på. Du har också hört att häxor sover på dagen, och är säker på att du kan smyga in och ut utan att bli upptäckt. \n \n Därför går du runt till stugans baksida och kryper in genom ett öppet fönster. Du finner dig i ett kök som ser förvånadsvärt ombonat ut för en häxas hem. Hyllorna är fyllda med bakingredienser snarare än inlagda grodor och ödlor, det hänger tända lyktor i taket och levande ljus på bordet... \n \n Mer än så hinner du inte reflektera över innan något hårt slår dig i bakhuvudet och allt blir svart. \n \n När du vaknar till är du ordentligt fastbunden vid ett träd utomhus och en dam som inte alls ser ut som en häxa låter dig veta att hon skickat en duva med ett meddelande om ditt inbrott till närmsta utpost. Soldater kommer att vara här inom några timmar för att hämta dig och slänga dig i fängelse. \n \n Starta om spelet och försök igen."
+  },
+  {
+    "id": "knacka",
+    "text": "En gammal dam öppnar dörren och bjuder in dig. Hon lamenterar att hon sällan får sällskap eftersom alla tror att hon är en häxa, och bjuder dig mer än gärna på mat. Damen ger dig också ditt första uppdrag, och lovar dig en riklig belöning om du lyckas. \n \n Hon har länge haft problem med en grupp skogsvättar som kommer och stjäl från hennes trädgård. Damen håller fram sina händer och erbjuder dig en skriftrulle med en okänd trollformel som hon säger hennes äventrande - tyvärr framlidne - man lämnat efter sig, och en dolk. Hon låter dig bara välja en att ta med dig.",
+    "val": [
+      { "text": "Ta dolken", "nasta": "dolk" },
+      { "text": "Ta skriftrullen", "nasta": "rulle" }
+    ]
+  },
+  {
+    "id": "dolk",
+    "text": "Du har aldrig använt dig av trollformler förr och väljer därför att ta dolken, även om du inte gillar vad det innebär. \n \n Du lämnar damen och följer vättespåren djupare in i skogen. Medan du går låter du tankarna flyta iväg till vad du måste göra när du kommer fram. Du plockar fram dolken och tittar på dess blank yta.  \n \n Fast i dina tankar kring dolken och din planering snubblar du över en trädrot och faller över dolken. \n \n Starta om spelet och försök igen."
+  },
+  {
+    "id": "rulle",
+    "text": "Trots att du inte vet vad för trollformel skriftrullen bär på så får du känslan av att det är rätt väg att gå. \n \n Med något osäkra steg (du har trots allt inte varit äventyrare i mer än en dag) följer du vättarnas spår vidare in i skogen. Det dröjer inte länge innan du hör ljuden från vättarnas läger och du smyger försiktigt närmare. \n \n Gömd bakom en buske observerar du lägret en stund och funderar över ditt nästa steg. Du kan antingen hoppa fram och göra dig känd för vättarna innan du aktiverar skriftrullen, eller aktivera den från din gömma bakom busken.",
+    "val": [
+      { "text": "Hoppa fram", "nasta": "hoppa" },
+      { "text": "Agera från din gömma", "nasta": "gömd" }
+    ]
+  },
+  {
+    "id": "gömd",
+    "text": "Du vill inte avslöja att du hittat vättarnas läger så du vecklar ut skriftrullen där du sitter bakom busken och viskar de obekanta orden. \n \n Du inser väldigt snabbt att detta var ett misstag när det suger till i magen och du blir yr. Gnuggar dina ögon och skakar på huvudet för att bli av med yrseln, och när du igen kan fokusera på din omgivning finner du att du inte längre står gömd bakom en buske vid vättarnas läger. \n \n Nu befinner du dig istället i en korridor omringad av sten på alla sidor förutom uppåt, och när du tittar uppåt ser du inte en himmel av löv som man kanske väntat sig när man just befann sig i en skog. Himlen ser inte heller ut som en vanlig blå himmel med vita moln, utan ser ut att skifta i suddiga gröna och bruna toner. \n \n Förvirrad börjar du vandra för att hitta en dörr, ett fönster, en förklaring till vart du är men efter ett par svängar står det klart att du befinner dig i en labyrint. Du kan inte annat göra än att vandra tills du förhoppningsvis hittar en utväg. \n \n Starta om spelet och försök igen."
+  },
+  {
+    "id": "hoppa",
+    "text": "Du hoppar fram från din gömma med skriftrullen i din hand, och medan vättarna ser på dig i chock och förvåning vecklar du ut skriftrullen och läser ord som du inte känner igen. När du läst den korta frasen försvinner skriftrullen från dina händer i ett moln av aska. \n \n Vättarna verkar känna igen språket och alla försöker febrilt rymma iväg utan lycka. På ett ögonblick har alla vättar försvunnit från lägret. \n \n Vid dina fötter hittar du en snökula som inte fanns där innan. Du plockar upp snökulan och när du tittar närmare på den ser du att den föreställer en labyrint, och i en splitsekund hade du kunnat svära att du såg en pytteliten vätte i en av gångarna. \n \n Du visar upp snökulan för damen medan du berättar vad som hände i lägret. Damen blir överlycklig och ger dig belöningen hon lovat. Det har sedan du kom tillbaka till stugan blivit mörkt och hon låter dig därför sova på vinden. \n \n Dagen efter pekar hon i en riktning och säger att du bör kunna hitta fler uppdrag i värdshuset ytterligare några timmar åt det hållet. \n \n Du vann skogsvägen. Starta om spelet och prova att besöka bergen."
+  },
+  {
+    "id": "bergen",
+    "text": "Din magkänsla säger att ett äventyr väntar dig i bergskedjan till öst. Med ett upprymda steg följer du vägen förbi ängar, åkrar och hagar. Du hälsar på vandrare och köpmän du möter på vägen men ju närmare bergen du kommer desto färre personer möter du på vägen, och desto dystrare blir humöret bland dem. \n \n Vid lunchtid stannar du på en rastplats vid bergets fot för vila och mat. I skuggan under ett kalt, ensamt träd sitter en mystisk figur höljd i en slängkappa.",
+    "val": [
+      { "text": "Ignorera", "nasta": "ignorera" },
+      { "text": "Samtala", "nasta": "samtala" }
+    ]
+  },
+  {
+    "id": "ignorera",
+    "text": "Du väljer att ignorera figuren i förmån för att komma iväg snabbt igen eftersom du vill inte riskera att hamna i ett timmarlångt samtal och förlora värdefullt dagsljus i bergen. Så fort du kan skyndar du iväg upp det som tidigare var en väg men nu känns mer som en stig. \n \n Du följer stigen tills den tar slut och du står framför en grottmynning. Innanför grottans ingång ligger ett par facklor och tändstenar.",
+    "val": [
+      { "text": "Ta en fackla", "nasta": "fackla" },
+      { "text": "Gå utan fackla", "nasta": "mörker" }
+    ]
+  },
+  {
+    "id": "samtala",
+    "text": "Du är allt för nyfiken på vad figuren kan berätta för dig för att låta hen sitta ensam under trädet och slår dig ner i närheten. 'Jag såg dig inte vandra på vägen till bergen, varthän kommer du från?' frågar du figuren. \n \n Figuren tar av sig sin huva och förklarar att han kom från bergen, och råder dig att vända om då bergen kryllar av troll. Men du ger dig inte, du säger att du tänker ta dig igenom bergen oavsett vad han säger. Något motvilligt ger han dig då informationen att du kommer att behöva gå igenom en grotta på din väg, och att trollen som patrullerar där är dumma och hör dåligt, men är starka och ljuskänsliga. Om du inte tänker följa hans råd bör du i alla fall ha detta i åtanke. Han reser sig sedan och börjar gå längst vägen du precis kom från. \n \n Du beger dig upp in i bergen och som mannen sa står du strax framför en grottmynning. Innanför grottans ingång ligger ett par facklor och tändstenar.",
+    "val": [
+      { "text": "Gå utan facklan", "nasta": "mörkerTips" },
+      { "text": "Ta en fackla", "nasta": "facklaTips" }
+    ]
+  },
+  {
+    "id": "fackla",
+    "text": "Mörkret innanför grottans öppning är överväldigande och du skattar dig lycklig att det ligger facklor vid öppningen. Du tänder därför eld på en av dem och tar dina första kliv in i grottan. \n \n Ju längre du går, desto självsäkrare känner du dig. Du har nu gått långt och länge inne i grottan utan minsta tecken på fiender. Längre in i grottan så glimtar du i en sidokammare med en skattkista. \n \n En skattkista i en övergiven grota känns nästan för bra för att bara sant, men lockad av tanken på vilka rikedomar skattkistan gömmer går du raka vägen till sidokammaren. Utan att se dig om springer du till kistan. Det är inte förrän du står böjd över kistan du inser att du inte är ensam i sidokammaren. Du delar nu rum med tre troll, varav ett har flyttat sig för att blockera vägen du kom från. Du är nu fast i ett rum med troll som utan tvivel tänker äta dig till middag. \n \n Starta om spelet och försök igen."
+  },
+  {
+    "id": "mörker",
+    "text": "Du vet inte varför, men din magkänsla säger att du kommer fara bättre genom grottan utan ljus. Med osäkra steg beger du dig in i en nattsvart grotta utan ljuskälla. Utan att se mycket måste du förlita dig på dina andra sinnen, så du lyssnar och känner dig fram tills dina ögon vant sig vid mörkret. Det tar mycket längre tid att för dig att ta dig fram än om du haft en ljuskälla men du samlar allt tålamod du kan och till slut lönar det sig. \n \n Efter timmar av olidlig nervositet ser du månljuset genom grottans utgång och du vågar äntligen andas ut. Väl ute ur grottan ser du dig omkring och långt nedanför vid bergets fot ser du ljuset från lyktor och levande ljus i en mysig liten stad. \n \n Ditt första äventyr gav inte mycket till belöning, men du är nöjd med erfarenheten och ivrig att ta dig ner till staden för att se vad för utmaningar och uppdrag du kan hitta i värdshuset. \n \n Du har kommit lottlös men levande ur bergsvägen. Starta om spelet och försök igen."
+  },
+  {
+    "id": "facklaTips",
+    "text": "Mörkret innanför grottans öppning är överväldigande och trots mannens råd kan du inte tänka dig att gå igenom grottan i nästan nattsvart mörker, speciellt om det finns troll därinne. Du tänder därför eld på en fackla och tar dina första kliv in i grottan. \n \n Ju längre du går, desto självsäkrare känner du dig. Du ser inte tecken på ett enda troll och tänker att mannen måste försökt skrämma dig av någon anledning. Ett par dussin meter till in i grottan så glimtar du i en sidokammare med en skattkista. Nu börjar du misstänka att figuren försökt lura in dig i grottan i mörkret för att du skulle missa denna sidokammare och skattkista. \n \n Lockad av tanken på vilka rikedomar skattkistan gömmer går du raka vägen till sidokammaren. Utan att se dig om springer du till kistan. Det är inte förrän du står böjd över kistan du inser att du inte är ensam i sidokammaren. Du delar nu rum med tre troll, varav ett har flyttat sig för att blockera vägen du kom från. Du är nu fast i ett rum med troll som utan tvivel tänker äta dig till middag. Kanske skulle du följt den mystiske mannens råd ändå. \n \n Starta om spelet och försök igen."
+  },
+  {
+    "id": "mörkerTips",
+    "text": "Du är till en början osäker på om du borde lita på mannen men din magkänsla talar till dig igen och säger att det är bäst du följer hans rekommendation. Med osäkra steg beger du dig in i en nattsvart grotta utan ljuskälla. Utan att se mycket måste du förlita dig på dina andra sinnen, så du lyssnar och känner dig fram tills dina ögon vant sig vid mörkret. Det tar mycket längre tid att för dig att ta dig fram än om du haft en ljuskälla men du samlar allt tålamod du kan och till slut lönar det sig. \n \n På avstånd hör du kraftfulla snarkningar som inte kan komma från någon annan best än en flock troll. Du bedömer att dem kommer från en sidokammare och du går tyst närmare för att undersöka. Väl framme vid sidokammarens mynning kan du med nöd och näppe skymta tre sovande troll, och i mitten av rummet en skattkista.",
+    "val": [
+      { "text": "Smyg in", "nasta": "stealth" },
+      { "text": "Gå vidare", "nasta": "vidare" }
+    ]
+  },
+  {
+    "id": "vidare",
+    "text": "Du vågar inte utmana ödet och ge dig in i en kammare full av sovande troll och väljer att tyst vandra vidare mot grottans utgång. Efter vad som känns som timmar ser du månljuset genom grottans utgång och du vågar äntligen andas ut. Väl ute ur grottan ser du dig omkring och långt nedanför vid bergets fot ser du ljuset från lyktor och levande ljus i en mysig liten stad. \n \n Ditt första äventyr gav inte mycket till belöning, men du är nöjd med erfarenheten och ivrig att ta dig ner till staden för att se vad för utmaningar och uppdrag du kan hitta i värdshuset. \n \n Du har kommit lottlös men levande ur bergsvägen. Starta om spelet och försök igen."
+  },
+  {
+    "id": "stealth",
+    "text": "Minnen från din barndom när din mor läste sagor för dig på kvällarna kommer tillbaka till dig där du står och spanar. Du vet att om sagorna är sanna så har trollen samlat på sig värdefulla ädelstenar som troligtvis ligger i kistan. Besluten om att du ska ha en, eller ett par, värdefulla souvenirer att visa upp när du når grottans utgång smyger du in så tyst du kan. Dina sinnen går på högvarv medan du lyssnar efter minsta tecken på att trollen ska vakna. Stilla lyfter du locket på kistan och du är inte besviken när du tittar ner i kistan. Det är svårt att se färger på kristallerna men du kan se att det är flera olika typer. \n \n Plötsligt hör du att ett av trollen börjar vända och vrida på sig. Du plockar hastigt på dig en näve ädelstenar och stoppar dem i fickan. Tyst men fort skyndar du iväg från sidokammaren. \n \n Du märker inte att du hållt andan förrän du kan se månljuset i grottans utgång. Väl ute ur grottan ser du dig omkring och långt nedanför vid bergets fot ser du ljuset från lyktor och levande ljus i en mysig liten stad. Självsäkert går du mot staden. Du har en riktigt bra historia att berätta på värdshuset som förhoppningvis lockar gäster i behov av en äventyrare att erbjuda dig ett jobb. \n \n Du vann bergsvägen. Starta om spelet och prova att besöka skogen."
+  }
+]

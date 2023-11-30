@@ -1,0 +1,62 @@
+/* ALLMÄN STYLING */
+body {
+  background-color: black;
+  font-family: "Quicksand", monospace;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: darkslategrey;
+}
+
+aside {
+  position: absolute;
+  top: 95%;
+  left: 95%;
+  transform: translate(-95%, -95%);
+}
+/* RUBRIKER STYLING */
+h1 {
+  color: darkslategrey;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+/* KNAPPAR STYLING */
+#knappContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: grey;
+  border: 2px solid black;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  margin: 5px;
+  font-family: "Quicksand", monospace;
+  font-weight: 500;
+}
+
+button:hover {
+  background: lightgrey;
+}
+
+button:active {
+  background-color: darkgrey;
+}
