@@ -1,0 +1,10 @@
+﻿@model Item //TILLÅTER ANVÄNDNING AV "ITEMS" FRÅN DATABASEN
+@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+}
+
+<div class="flex flexColumn">
+    <h2>Ingredienser @Html.DisplayFor(model => model.Namn)</h2> <!--VISAR UPP DATAN FRÅN DATABASEN SOM ÄR LÄNKAD TILL MODELLEN Item UNDER TABELLKOLUMNEN Namn-->
+    <p>@Html.DisplayFor(model => model.Ingredienser)</p><br /> <!--VISAR UPP DATAN FRÅN DATABASEN SOM ÄR LÄNKAD TILL MODELLEN Item UNDER TABELLKOLUMNEN Ingredienser-->
+    <a asp-action="Index" asp-controller="Meny">Tillbaka till menyn</a><br /> <!--LÄNK TILLBAKA TILL MENYN-->
+</div>

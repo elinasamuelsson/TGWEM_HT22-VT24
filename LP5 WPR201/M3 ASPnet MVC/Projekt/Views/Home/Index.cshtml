@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="sv-se">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Första valet när det kommer till pizza i Lessebo" />
+    <meta name="keywords" content="mat, pizza, hamburgare, kebab" />
+    <meta name="author" content="Elina Samuelsson" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/siteindex.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="top">
+        <header class="flex">
+            <a asp-action="Index" asp-controller="Home">
+                <img src="~/dayan_logga.webp" class="logo" />
+                <h1 class="logoText">Dayan Pizzeria</h1>
+            </a>
+        </header>
+    </div>
+    <main>
+        <div>
+            <nav class="flex">
+                <ul class="flex">
+                    <li>
+                        <a asp-action="Index" asp-controller="Meny" class="button">
+                            <i class="fa-fw fas fa-pizza-slice"></i> Meny
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="Nyheter" asp-controller="Home" class="button">
+                            <i class="fa-fw fa-solid fa-newspaper"></i> Nyheter
+                        </a>
+                    </li>
+                    <li>
+                        <a asp-action="Kontakt" asp-controller="Home" class="button">
+                            <i class="fa-fw fa-solid fa-envelope"></i> Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                <div class="flex">
+                    <div class="phoneNumber">
+                    <h2>Lucherbjudande mellan 11-14</h2>
+                    <h3>Pizza + valfri dryck 100:-</h3>
+                    
+                    <p>
+                        <i class="fa-fw fas fa-square-phone"></i>0478 - 420 60
+                    </p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </main>
+    <footer>
+        <div class="flex">
+            <span class="cText">© 2023 Dayan Pizzeria</span>
+        </div>
+    </footer>
+</body>
+</html>

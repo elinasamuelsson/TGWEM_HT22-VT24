@@ -1,0 +1,122 @@
+ body {
+    background-color: black;
+    color: white;
+    font-family: Helvetica, sans-serif;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.adminMenu {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+header {
+    border-bottom: 5px solid goldenrod;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+    margin-right: 10px;
+}
+
+.logoText {
+    color: white;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul > li {
+    display: inline-block;
+    margin: 25px;
+}
+
+main {
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+.container {
+    width: 65vw;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 50px;
+    border-radius: 30px;
+}
+
+.cText {
+    padding-top: 5px;
+}
+
+.pizzaKlass {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modal {
+    height: 150px;
+    width: 200px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+div.modal > span {
+    display: block;
+} 
+
+.adminText {
+    text-align: right;
+}
+
+footer {
+    border-top: 5px solid goldenrod;
+    height: 10vh;
+}
+
+.cText {
+    color: white;
+    padding-top: 5px;
+}
+
+.input {
+    margin-bottom: 10px;
+}

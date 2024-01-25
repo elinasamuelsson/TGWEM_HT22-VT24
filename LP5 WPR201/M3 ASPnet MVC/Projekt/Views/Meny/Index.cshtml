@@ -1,0 +1,28 @@
+﻿@model List<Item> //TILLÅTER ANVÄNDNING AV EN LISTA AV "ITEMS" FRÅN DATABASEN
+@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+}
+
+<div class="flex">
+    <div class="container">
+        <h1>Meny</h1>
+        <h2>Pizzor</h2>
+        <div class="flex spaceBetween">
+        @foreach (var item in Model) //LOOPAR NEDAN KOD FÖR VARJE ITEM I LISTAN OCH SKAPAR EN DIV SOM INNEHÅLLER NAMN OCH PRIS PÅ VARJE PIZZA
+                {
+                <div class="modal">
+                    <h3>@Html.DisplayFor(model => item.Namn)</h3>
+                    <span>@Html.DisplayFor(model => item.Pris)</span>
+                        @if (User.Identity.IsAuthenticated) //OM ANVÄNDAREN ÄR INLOGGAD SOM ADMIN VISAS NEDAN LÄNKAR
+                        {
+                        <a asp-action="Ingredienser" asp-route-id="@item.Id">Se ingredienser</a><br />
+                        <p class="adminText"><a asp-action="Edit" asp-route-id="@item.Id">Edit</a> / <a asp-action="Delete" asp-route-id="@item.Id">Del</a></p>
+                        } else //OM ANVÄNDAREN INTE ÄR INLOGGAD VISAS NEDAN LÄNK
+                        {
+                        <a asp-action="Ingredienser" asp-route-id="@item.Id">Ingredienser</a>
+                        }
+                </div>
+                }
+        </div>
+    </div>
+</div>

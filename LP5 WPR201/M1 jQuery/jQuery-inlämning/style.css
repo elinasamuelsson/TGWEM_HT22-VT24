@@ -1,0 +1,125 @@
+body {
+  background: rgb(153, 209, 156);
+}
+
+.full-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.navbar {
+  position: fixed;
+  width: 25%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.navbar-list {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto Slab", serif;
+  list-style-type: none;
+}
+
+.button {
+  font-size: 0.6rem;
+  margin-left: 38px;
+  font-family: "Space Mono", monospace;
+  width: 110px;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.sticky {
+  position: fixed;
+  width: 25%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 0;
+}
+
+.header-content {
+  text-align: center;
+  height: 45%;
+}
+
+h1 {
+  font-family: "Space Mono", monospace;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  line-height: 25px;
+}
+
+.bio {
+  height: 60%;
+  width: 40%;
+}
+
+.bio-img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#btn-hide,
+#btn-show,
+#btn-animate {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#btn-hide,
+#btn-show {
+  margin-bottom: 4px;
+}
+
+#btn-animate {
+  margin-bottom: 16px;
+}
+
+.tabell-know {
+  height: 45%;
+}
+
+table {
+  width: 200px;
+}
+
+th {
+  font-family: "Space Mono", monospace;
+  text-align: left;
+}
+
+td {
+  font-family: "Roboto Slab", serif;
+}
+
+td:nth-child(2) {
+  text-align: right;
+}
+
+a {
+  color: #112a46;
+  text-decoration: none;
+}
+
+i {
+  color: black;
+}
+
+.icon-big {
+  font-size: 22px;
+  color: #4a5043;
+}

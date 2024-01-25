@@ -1,0 +1,11 @@
+﻿@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+} 
+<div class="flex flexColumn adminMenu">
+    <a asp-action="Index" asp-controller="Meny">Redigera/ta bort pizzor</a> <!--ASP-ACTION OCH ASP CONTROLLER FÖR ATT DIRIGERA VART LÄNKARNA GÅR-->
+    <a asp-action="Create" asp-controller="Meny">Lägg till pizza</a>
+    <a href="#" style="color:darkgoldenrod;">Lägg till nyhet (KOMMER SNART)</a>
+    <a href="#" style="color:darkgoldenrod;">Redigera/ta bort nyheter (KOMMER SNART)</a>
+    <a href="#" style="color:darkgoldenrod;">Se inkomna meddelanden (KOMMER SNART)</a><br />
+    <a asp-action="SignOutUser">Logga ut</a> <!--ASP-ACTION SOM LÄNKAR TILL FUNKTIONEN SignOutUser SOM LOGGAR UT ANVÄNDAREN->
+</div>

@@ -1,0 +1,119 @@
+<!DOCTYPE htmargin-l>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Elina Samuelsson" />
+    <meta name="description" content="jQuery-inlämning i kursen WPR201" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>jQuery-inlämning</title>
+    <script
+      src="https://kit.fontawesome.com/5dd04f3304.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="#">till start</a></li>
+        <li><a href="#pres">presentation</a></li>
+        <li><a href="#know">kunskaper</a></li>
+        <li><a href="#kontakt">kontakt</a></li>
+      </ul>
+      <button class="button" id="btn-changebg">
+        randomize<br />
+        background color</button
+      ><br />
+    </nav>
+    <div class="full-page">
+      <div class="header-content">
+        <h1>Elina Samuelsson</h1>
+        <p>blivande webmaster</p>
+      </div>
+    </div>
+    <div id="pres" class="full-page">
+      <div class="bio">
+        <div>
+          <button class="button" id="btn-hide">Hide image</button>
+          <button class="button" id="btn-show">Show image</button>
+          <button class="button" id="btn-animate">Animate image</button>
+          <img
+            src="elina.webp"
+            class="bio-img"
+            alt="photo of this site's developer"
+          />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+          facilisis neque vel est gravida, tristique fermentum nibh vulputate.
+          Duis non interdum lorem, euismod convallis lacus.
+        </p>
+      </div>
+    </div>
+    <div id="know" class="full-page">
+      <div class="tabell-know">
+        <table>
+          <th>Kunskaper</th>
+          <tr>
+            <td>Område</td>
+            <td>Skala</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>3 / 5</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>3 / 5</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>2 / 5</td>
+          </tr>
+          <tr>
+            <td>jQuery</td>
+            <td>2 / 5</td>
+          </tr>
+          <tr>
+            <td>Lightroom</td>
+            <td>4 / 5</td>
+          </tr>
+          <tr>
+            <td>Photoshop</td>
+            <td>3 / 5</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="kontakt" class="full-page">
+      <div class="header-content">
+        <p>
+          Telefonnummer: 070 - 12 34 567<br />
+          Epost: elina.samuelsson@student.hv.se
+        </p>
+        <a href="https://www.instagram.com/carrotkimchi/"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/elinasamuelsson/"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a href="https://github.com/elinasamuelsson"
+          ><i class="fa-brands fa-github"></i
+        ></a><br>
+      </div>
+    </div>
+  </body>
+</html>

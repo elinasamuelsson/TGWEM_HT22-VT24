@@ -1,0 +1,30 @@
+﻿@model UserModel
+@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+}
+
+<div class="flex flexColumn">
+    <form asp-action="Index" asp-route-returnurl="@ViewData["ReturnUrl"]"> <!--VIEWDATA SPARAR OCH SKICKAR ANVÄNDAREN TILL DÄR DEM VAR INNAN DENNA SIDA-->
+        <table>
+            <thead>
+                <tr><td colspan="2"><h2>Admininloggning</h2></td></tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Användarnamn:</td>
+                    <td>@Html.EditorFor(model => model.Username)</td><!--HÄMTAR FÄLT ATT FYLLA I ANVÄNDARNAMN I FRÅN UserModel-->
+                </tr>
+                <tr>
+                    <td>Lösenord:</td>
+                    <td>@Html.EditorFor(model => model.Password)</td><!--HÄMTAR FÄLT ATT FYLLA I LÖSENORD I FRÅN UserModel-->
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" value="Logga in" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    <div>
+        <p>@ViewBag.ErrorMessage</p><!--VISAR SPECIFIERAT MEDDELANDE OM INLOGGNING MISSLYCKAS-->
+    </div>
+</div>

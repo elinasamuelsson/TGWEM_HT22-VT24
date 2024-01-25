@@ -1,0 +1,25 @@
+﻿@model Item //TILLÅTER ANVÄNDNING AV "ITEMS" FRÅN DATABASEN
+@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+}
+
+<div class="flex flexColumn">
+    <h1>Redigera denna pizza?</h1>
+    <form asp-action="Edit"> <!--FORM FÖR ATT HANTERA HTTPPOST FÖR RELEVANT VIEW I CONTROLLERN-->
+        <div>
+            <input type="hidden" asp-for="Id" /> <!--GÖMD ID-DATA FÖR ATT RÄTT TABELLRAD SKA REDIGERAS I DATABASEN-->
+            </div><br />
+        <div>
+            <span>Titel:</span><br /> <input asp-for="Namn" /> <!--ASP-FOR FÖR ATT SKICKA DATAN SOM SKA ÄNDRAS GENOM MODELLEN TILL RÄTT TABELL OCH TABELLRAD-->
+            </div><br />
+        <div>
+            <span>Pris:</span><br /> <input asp-for="Pris" /> <!--ASP-FOR FÖR ATT SKICKA DATAN SOM SKA ÄNDRAS GENOM MODELLEN TILL RÄTT TABELL OCH TABELLRAD-->
+            </div><br />
+        <div>
+            <span>Ingredienser:</span><br /> <input asp-for="Ingredienser" /> <!--ASP-FOR FÖR ATT SKICKA DATAN SOM SKA ÄNDRAS GENOM MODELLEN TILL RÄTT TABELL OCH TABELLRAD-->
+            </div><br />
+        <div class="input">
+            <input type="submit" value="Spara" /> <!--SKICKAR ALL DATA NÄR MAN TRYCKER PÅ KNAPPEN-->
+        </div>
+    </form>
+</div>

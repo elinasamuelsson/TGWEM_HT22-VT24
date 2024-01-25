@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html lang="sv-se">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Första valet när det kommer till pizza i Lessebo">
+        <meta name="keywords" content="mat, pizza, hamburgare, kebab">
+        <meta name="author" content="Elina Samuelsson">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="~/css/site.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="top">
+            <header class="flex">
+                <a asp-action="Index" asp-controller="Home">
+                    <img src="~/dayan_logga.webp" class="logo" />
+                    <h1 class="logoText">Dayan Pizzeria</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a asp-action="Index" asp-controller="Home">Startsida</a></li>
+                        <li><a asp-action="Index" asp-controller="Meny">Meny</a></li>
+                        <li><a asp-action="Nyheter" asp-controller="Home">Nyheter</a></li>
+                        <li><a asp-action="Kontakt" asp-controller="Home">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+        <main>
+            @RenderBody() <!--MARKERAR PLATSEN DÄR VARJE INDIVIDELL SIDAS INNEHÅLL KOMMER LIGGA-->
+        </main>
+        <footer>
+            <div class="flex">
+                <span class="cText">© 2023 Dayan Pizzeria</span>
+            </div>
+        </footer>
+    </body>
+</html>

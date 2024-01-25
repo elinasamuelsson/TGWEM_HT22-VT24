@@ -1,0 +1,17 @@
+﻿@model Item //TILLÅTER ANVÄNDNING AV "ITEMS" FRÅN DATABASEN
+@{
+    Layout = "_Layout"; //HÄMTAR LAYOUT FRÅN EN GEMENSAM FIL SOM HANTERAR <head>-TAGGAR, HEADER/NAVIGERING OCH FOOTERN
+}
+<div class="flex flexColumn">
+    <div>
+        <h1>Radera denna pizza?</h1>
+        <h4>@Html.DisplayFor(model => model.Namn)</h4> <!--VISAR UPP DATAN FRÅN DATABASEN SOM ÄR LÄNKAD TILL MODELLEN Item UNDER TABELLKOLUMNEN Namn-->
+        <p>@Html.DisplayFor(model => model.Ingredienser)</p> <!--VISAR UPP DATAN FRÅN DATABASEN SOM ÄR LÄNKAD TILL MODELLEN Item UNDER TABELLKOLUMNEN Ingredienser-->
+    </div>
+    <form asp-action="Delete"> <!--FORM FÖR ATT HANTERA HTTPPOST FÖR RELEVANT VIEW I CONTROLLERN-->
+        <div class="input">
+            <input type="hidden" asp-for="Id" /> <!--GÖMD ID-DATA FÖR ATT RÄTT TABELLRAD SKA RADERAS I DATABASEN-->
+            <input type="submit" value="Radera" /> <!--SKICKAR ALL DATA NÄR MAN TRYCKER PÅ KNAPPEN-->
+        </div>
+    </form>
+</div>
