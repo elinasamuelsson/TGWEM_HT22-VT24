@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 9</title>
+  </head>
+  <body>
+    <div style="position: absolute;width: 100px;height: 100px;border: 1px solid black;" id="flytandeDiv"></div>
+    <script>
+
+        minNamespace = {
+          fart: 5,
+          /* farten jag vill att min div ska flytta sig åt höger i. Ändras senare för att
+          flytta div:en åt vänster igen */
+          flyttaDiv: function () {
+            const div = document.getElementById("flytandeDiv");
+            // hämta diven med hjälp av dens id
+
+            div.style.left = "5px";
+            // div:ens startposition
+
+            const intervall = setInterval(function () {
+            // startar mitt intervall
+
+              if (div.offsetLeft >= 305) {
+                this.fart = -5;
+              } /* när div:en förskjutits 300 pixlar ändras variabeln fart till -5, och 
+              börjar då förflytta sig åt vänster igen */
+
+              else if (div.offsetLeft <= 5) {
+                this.fart = 5;
+              } /* när div:en når sin startposition ändras variabeln fart tillbaka till
+              5 och börjar förskjutas åt höger igen */
+
+              div.style.left = div.offsetLeft + this.fart + "px";
+              /* ställer in div:ens position till hur långt den just nu är från vänstra 
+              kanten plus vår hastighet (plus px för att det ska ha en giltig måttenhet) */
+
+            }, 200); // intervallet ställt till att flyttas 5 gånger varje sekund
+          },
+        };
+
+        minNamespace.flyttaDiv();
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 2</title>
+  </head>
+  <body>
+    <script>
+      
+      const tempen = {
+        stad: [
+          { namn: "Malmö", natt: "12", morgon: "14", kvall: "10" },
+          { namn: "Göteborg", natt: "11", morgon: "15", kvall: "9" },
+          { namn: "Stockholm", natt: "10", morgon: "13", kvall: "10" },
+          { namn: "Mariestad", natt: "11", morgon: "16", kvall: "11" },
+        ],
+      };
+
+      const Sthlm = tempen.stad[2];
+      // separerar ut objektet som informationen om Stockholm ligger i
+
+      alert(
+        `Temperaturen i ${Sthlm.namn} är ${Sthlm.natt} på natten, ${Sthlm.morgon} på morgonen och ${Sthlm.kvall} på kvällen.`
+      ); // använder nya const:en Sthlm för att enklare hitta och skriva ut varje post  
+      
+    </script>
+  </body>
+</html>

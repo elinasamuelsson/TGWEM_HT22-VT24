@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 7</title>
+    <body>
+      <script type="text/JavaScript">
+
+        const ordArray = ["Hej", "Nej", "EJ", "Leverpastej", "42"],
+        slumpadSiffra = Math.floor(Math.random() * (ordArray.length - 0 + 1)) + 0;
+        /* slumpar en siffra som vi kan använda för att "välja" ett ord i arrayen att visa
+        https://stackoverflow.com/a/1527820 hjälp med jämn distribution från 0-4. */
+
+        alert(ordArray[slumpadSiffra]);
+        // använder vår slumpade siffra för att visa ett slumpat ord i arrayen
+        
+      </script>
+    </body>
+  </head>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>JavaScript Övning 18</title>
+  </head>
+  <body>
+    <div style="position:absolute; top:30px; left:30px;">
+      <p>God Jul</p>
+    </div>
+    <button id="flyttaKnapp" onclick="flyttaDiv()">Flytta texten!</button>
+    <script type="text/JavaScript">
+      
+      const paraContainer = document.querySelector("div");
+
+      function flyttaDiv() {
+        const posTop = Math.random() * (1800 - 0) + 0,
+        posLeft = Math.random() * (1000 - 0) + 0;
+        paraContainer.style.top = posTop + "px;";
+        paraContainer.style.left = posLeft + "px;";
+      }
+
+      document.getElementById("flyttaKnapp").addEventListener("click", flyttaDiv());
+
+    </script>
+  </body>
+</html>

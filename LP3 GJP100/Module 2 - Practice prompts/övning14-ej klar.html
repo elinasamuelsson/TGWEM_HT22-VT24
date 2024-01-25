@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 14</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+
+      const text = prompt("Skriv in din text:");
+
+      setTimeout(() => {
+        for (let count = 0; count < text.length; ++count) {
+          console.log(text.slice(0, (count + 1)) + "\n");
+        }
+      }, 2000);
+
+    </script>
+  </body>
+</html>

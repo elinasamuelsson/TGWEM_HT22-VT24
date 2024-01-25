@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 8</title>
+  </head>
+  <body>
+    <input type="text" id="inputText" /><br />
+    <!-- inputfält med id för att enkelt hämtas i javascripten -->
+    <button onclick="minNamespace.printaText()">Printa text!</button>
+    <!-- knapp med onclick för att aktivera funktionen -->
+    <div id="target"></div>
+    <!-- div med id target som mål för texten att skickas till -->
+    <script>
+
+      const minNamespace = {
+        printaText: function () {
+        // namespace med funktion för att ta emot och skicka texten
+            const inputText = document.getElementById("inputText").value,
+            // hämtar text från inputfältet
+
+            targetDiv = document.getElementById("target");
+            // skapar en variabel av diven som ska ta emot texten
+            targetDiv.innerHTML = `<p>${inputText}</p>`;
+            // ändrar innehållet i diven till en paragraf innehållande texten från inputfältet
+        },
+      };
+
+    </script>
+  </body>
+</html>

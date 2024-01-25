@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 5</title>
+  </head>
+  <body>
+    <input type="text" id="inputA" /><br />
+    <input type="text" id="inputB" /><br />
+    <button onclick="minNamespace.addera()">Addera siffror</button>
+    <!-- onclick för att kalla på funktionen -->
+    <div>
+      <p id="target"></p>
+      <!-- paragraf med ett id så att jag kan identifiera mitt "mål" på ett enkelt sätt -->
+    </div>
+    <script>
+        
+      const minNamespace = {
+        addera: function() {
+
+          const siffraA = parseInt(document.getElementById("inputA").value),
+          siffraB = parseInt(document.getElementById("inputB").value);
+          // hämta värden och omvandla stringen till siffror
+
+          targetPara = document.getElementById("target");
+          // hitta målet i HTML-koden
+          targetPara.innerHTML = `Summan av ${siffraA} och ${siffraB} är ${siffraA + siffraB}.`;
+          // ändra innehållet i paragrafen
+        
+        },
+      };
+
+    </script>
+  </body>
+</html>

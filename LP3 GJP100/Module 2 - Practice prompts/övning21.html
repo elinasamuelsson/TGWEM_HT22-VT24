@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 21</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+
+      setInterval(() => {
+      // intervall för att den anonyma funktionen ska upprepas var 1000:e millisekund (varje sekund)
+        const slumpadPosHojd = Math.floor(Math.random() * (500 - 10 + 1)) + 10,
+        slumpadPosBredd = Math.floor(Math.random() * (1100 - 10 + 1)) + 10;
+        // slumpar höjd och bredd som vi kan använda senare för att positionera div:arna
+        slumpadPosHojd.toString();
+        slumpadPosBredd.toString();
+        // omvandlar höjd och bredd till stringar, så dem kan användas nedan
+        
+        const skapaDiv = document.createElement("div");
+        // skapar vår nya div
+        skapaDiv.style= `width:50px;height:50px;border:1px solid black;position:absolute;top:${slumpadPosHojd}px;left:${slumpadPosBredd}px;`
+        // ställer in storlek, border och position genom att lägga till en stil på vårt skapade element
+        document.body.appendChild(skapaDiv);
+        // bestämmer vart vår div ska läggas i vår html, i detta fall rakt in i body-elementet
+      }, 1000);
+
+    </script>
+  </body>
+</html>

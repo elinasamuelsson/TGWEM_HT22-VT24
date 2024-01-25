@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 1</title>
+    <style>
+      table, tr, td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+
+      var tempen = [
+      ["","00-08","08-16","16-24"],
+      ["Malmö",12,16,9],
+      ["Mariestad",13,15,10],
+      ["Stockholm",13,15,13],
+      ["Upphärad",14,16,15],
+      ["Göteborg",13,14,12]
+      ];
+
+      const tabell = document.createElement("table");
+      // skapa tabell
+
+      for (let tblRad = 0; tblRad < tempen.length; ++tblRad) {
+      // loop för att skapa varje rad i tabellen
+        const rad = document.createElement("tr");
+        // skapa tabellrad
+        tempenInner = tempen[tblRad];
+        // skapar en ny array av varje separat nästad array för varje loop-"vända"
+        tempenInner.push(Math.round(((tempenInner[1] + tempenInner[2] + tempenInner[3]) / 3) * 10) / 10);
+        /* kalkylerar och lägger till medeltempen i slutet av varje arraypost 
+        med hjälp av push. Hjälp med rundat decimaltal från 
+        https://stackoverflow.com/questions/7342957/how-do-you-round-to-1-decimal-place-in-javascript */
+        tempen[0][4] = "Medel";
+        // ändrar sista posten i första arrayen från NaN till Medel
+
+        for (let tblData = 0; tblData < tempenInner.length; ++tblData) {
+        // loop för att skapa tabelldatan
+          const innehall = document.createElement("td");
+          // skapa tabellpost
+          innehall.innerHTML = tempenInner[tblData];
+          // lägger till rätt innehåll i varje tabellpost
+          rad.appendChild(innehall);
+          // fäster innehållet till tabellraden
+
+        }
+        tabell.appendChild(rad);
+        // fäster raden till tabellen
+      }
+
+      document.body.appendChild(tabell);
+      // fäster den färdiga tabellen vid body-elementet i htmldokumentet
+      
+    </script>
+  </body>
+</html>

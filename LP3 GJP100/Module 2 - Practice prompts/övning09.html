@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 9</title>
+  </head>
+  <body>
+    <form name="betygArkiv" action="javascript:hittaBetyg()" method="get">
+      <label for="elev">Vems betyg vill du hämta?</label> <br />
+      <input type="text" id="elev" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px">Hämta betyg!</button>
+    </form>
+    <script type="text/JavaScript">
+
+      const namn = ["Klara", "Andrea", "Emil", "Sarah", "Alicia", "Victor", "Thomas", "Robert"],
+      betyg = ["A", "B", "C", "A", "D", "C", "E", "E"];
+      // deklarera variabler för elever, och betyg
+
+      function hittaBetyg() {
+        const elev = document.getElementById('elev').value,
+        betygOrdning = namn.indexOf(elev);
+        /* två nya variabler för att ta in namnet vi fyller i i formuläret ovan, och en för 
+        att matcha namnet med sin plats i arrayen och sedan använda detta som sitt värde */ 
+
+        if (betygOrdning >= 0) {
+          alert(betyg[betygOrdning]);
+        }
+        /* använder det matchade värdet i betygOrdning för att skicka utt ett alert med 
+        vilket betyg som personen har */
+
+        else {
+          alert("Något gick fel, kontrollera stavning och prova att skriva namnet med stor bokstav.");
+        }
+        // if-sats ifall namnet felstavas eller inte skrivs med stor första bokstav
+      }
+      
+    </script>
+  </body>
+</html>

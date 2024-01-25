@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv_SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 17</title>
+  </head>
+  <body>
+    <button id="julKnapp">Klicka här!</button>
+    <script type="text/JavaScript">
+
+      document.getElementById("julKnapp").onclick = function julmeddelande() {
+      // hämta information om vilket element och vilken händelse som ska trigga funktionen
+        const rubrik = document.createElement("h1");
+        // deklarerar variabel, och använder den för att skapa en h1:a
+        rubrik.innerText = "God Jul!";
+        // bestämmer vilken text som ska ligga i vår h1:a
+        document.body.appendChild(rubrik);
+        // skapar en plats till och binder vår h1:a som ett barn till body-elementet
+        rubrik.style.color = "red";
+        /* lägger till attributet style och ställer in det till röd, så att vår h1:a
+        blir röd när man trycker på knappen */
+      }
+
+    </script>
+  </body>
+</html>

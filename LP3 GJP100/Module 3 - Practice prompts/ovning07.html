@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 7</title>
+  </head>
+  <body>
+    <div id="bliGron">
+    <!-- div med id för att enkelt hitta senare -->
+      <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <script>
+      
+      const minNamespace = {
+        bytFarg: function() {
+          const div = document.getElementById("bliGron");
+          // hämta diven som ska byta färg
+          
+          div.addEventListener("mouseover", (event) => {
+            div.style.backgroundColor = "#8FBC8F";
+          }); /* lägger en eventListener med mouseover så att diven byter bakgrundsfärg när 
+          man drar musen över */
+
+          div.addEventListener('mouseout', (event) => {
+            div.style.backgroundColor = "#FFFFFF";
+          }); /* lägger en eventListener med mouseout så att diven byter tillbaka till vit
+          när musen lämnar diven */
+        }
+      }
+
+      minNamespace.bytFarg();
+      // kallar på funktionen, eftersom det inte händer något annars
+
+    </script>
+  </body>
+</html>

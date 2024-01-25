@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 10</title>
+  </head>
+  <body>
+    <button onclick="vara1.calcSubTotal()">Visa vara och pris</button>
+    <!-- knapp som triggar funktionen kopplad till klassen Vara, specifikt till variabeln
+    vara1 -->
+    <div>
+      <p id="target"></p>
+      <!-- målet för texten om vår vara -->
+    </div>
+    <script>
+
+      class Vara {
+        constructor(namn, pris, beskrivning, antal) {
+          this.namn = namn;
+          this.pris = pris;
+          this.beskrivning = beskrivning;
+          this.antal = antal;
+        } // klass med constructor för att skapa ny vara
+
+        calcSubTotal() {
+          const summa = this.pris * this.antal;
+          // räknar ut produkten av pris * antal
+          document.getElementById("target").innerText =
+            "Din vara är " + this.namn + ", " + this.beskrivning + ". \n" +
+            this.antal + " av din vara kostar totalt " + summa + 
+            " eftersom styckpriset är " + this.pris + ".";
+        } /* ändrar texten i paragrafen till en text innehållande varans namn, beskrivning,
+        antal, pris samt totalsumman för pris * antal */
+      };
+
+      const vara1 = new Vara("morot", 5, "en orange grönsak", 10);
+      // skapar ny vara med hjälp av klassen och construktorn
+    
+    </script>
+  </body>
+</html>

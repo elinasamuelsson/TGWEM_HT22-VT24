@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 3</title>
+  </head>
+  <body>
+    <input type="text" id="elevNamn" /><br />
+    <button id="hamtaBetyg">Hämta betyg</button><br />
+    <input type="text" id="betyg" /><br />
+    <button id="hamtaElever">Hämta betyg</button>
+
+    <script>
+      const elever = [
+        { namn: "klara", betyg: "A" },
+        { namn: "andrea", betyg: "B" },
+        { namn: "emil", betyg: "C" },
+        { namn: "sarah", betyg: "A" },
+        { namn: "alicia", betyg: "D" },
+        { namn: "victor", betyg: "C" },
+        { namn: "thomas", betyg: "E" },
+        { namn: "robert", betyg: "E" },
+      ];
+
+      const knappHamtaBetyg = document.getElementById("hamtaBetyg");
+      knappHamtaBetyg.addEventListener("click", () => {
+        const sokElev = document.getElementById("elevNamn").value;
+        sokElev.toLowerCase();
+        console.log(sokElev);
+      });
+      
+    </script>
+  </body>
+</html>

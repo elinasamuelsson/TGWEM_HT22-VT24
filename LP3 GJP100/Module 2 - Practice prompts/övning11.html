@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>JavaScript Övning 11</title>
+  </head>
+  <body>
+    <img id="bild" src="picsum1.jpg" />
+    <!-- bild med en id-tagg för enkel identifiering senare -->
+    <script type="text/JavaScript">
+
+      const andraBild = document.getElementById('bild');
+      // variabeln andraBild letar upp id:t bild i vår kod och binder elementet till denna variabel
+      andraBild.addEventListener("click", () => {
+        andraBild.src = 'picsum2.jpg'
+      });
+      /* funktion som lyssnar efter ett klick på rätt element i koden, och ställer in attributet på 
+      vår bild med id bild från picsum1.jpg till picsum2.jpg. På så vis ändrar vi bilden vid klicket */
+
+    </script>
+  </body>
+</html>

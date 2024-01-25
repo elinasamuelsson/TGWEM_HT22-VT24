@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="sv_SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 15</title>
+  </head>
+  <body>
+    <button id="kryptera">Kryptera!</button> <br />
+    <button id="dekryptera">Dekryptera!</button>
+    <!-- knappar för att köra funktionerna -->
+    <script type="text/JavaScript">
+
+      let text = "Lorem ipsum dolor sit amet.";
+      // text att kryptera
+      const bokstaver = ["o", "e", "t", "n"],
+      specialtecken = ["!", "#", "%", "&"],
+      // bokstäverna samt tecken som ska ersätta dem i två arrayer
+      krypteraKnapp = document.getElementById("kryptera"),
+      dekrypteraKnapp = document.getElementById("dekryptera");
+      // länkar in knapparna till vår funktion
+
+      alert(`Din text är: ${text}`);
+      // visar texten vi startar med
+
+      krypteraKnapp.addEventListener("click", () => {
+        for (let count = 0; count < bokstaver.length; ++count) {
+          text = text.replaceAll(bokstaver[count], specialtecken[count]);
+        }
+        /* använder en eventlistener för att vänta på ett klick som aktiverar vår funktion. 
+        funktionen loopar igenom arrayerna och använder funktionen replaceAll för att byta ut
+        varje bokstav en och en tills arrayerna tar slut */
+
+        alert(text);
+        // alertar vår nya, krypterade text
+      });
+
+      dekrypteraKnapp.addEventListener("click", () => {
+        for (let count = 0; count < bokstaver.length; ++count) {
+          text = text.replaceAll(specialtecken[count], bokstaver[count]);
+        } /* samma som ovan fast omvänt, loopar igenom arrayerna tills specialtecknena bytts
+          ut mot bokstäverna igen */
+
+        alert(text);
+        // alertar dekrypterad text
+      });
+
+    </script>
+  </body>
+</html>

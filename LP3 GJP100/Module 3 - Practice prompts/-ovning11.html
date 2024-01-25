@@ -1,0 +1,46 @@
+<!-- Återanvänd om möjligt klassen som skapades i föregående övning. Skapa en klass som 
+    heter Kundkorg. En kundkorg innehåller flera varor alltså är ett av attributen en 
+    array av Varor. Kundvagnen har en metod som heter calcTotal som loopar igenom alla 
+    varor i kundvagnen och skriver ut totalpriset någonstans på skärmen. Det är ok att 
+    initiera ett antal objekt direkt när sidan laddas. (om denna uppgift känns svår spara 
+    den till slutet av modulen) -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Modul 3 Övning 10</title>
+  </head>
+  <body>
+    <button onclick="vara1.calcSubTotal()">Visa vara och pris</button>
+    <div>
+      <p id="target"></p>
+    </div>
+    <script>
+        
+      class Vara {
+        constructor(namn, pris, beskrivning, antal) {
+          this.namn = namn;
+          this.pris = pris;
+          this.beskrivning = beskrivning;
+          this.antal = antal;
+        }
+
+        calcSubTotal() {
+          console.log(this);
+          const summa = this.pris * this.antal;
+          document.getElementById("target").innerText =
+            "Din vara är " + this.namn + ", " + this.beskrivning + ". \n" +
+            this.antal + " av din vara kostar totalt " + summa + " eftersom styckpriset är " + this.pris + ".";
+        }
+      }
+
+      class Kundkorg {
+      }
+
+      let vara1 = new Vara("morot", 5, "en orange grönsak", 10);
+
+    </script>
+  </body>
+</html>

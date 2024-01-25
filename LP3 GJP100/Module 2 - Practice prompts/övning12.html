@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <title>JavaScript Övning 12</title>
+  </head>
+  <body>
+    <script type="text/JavaScript">
+
+      const basText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit.";
+
+      const demoSplit = basText.split(' ');
+      // delar basText vid varje mellanslag och skapar en array av orden
+      alert(`Demo split: ${demoSplit}`);
+      // skriver ut nya arrayen i webbläsaren
+      console.log(demoSplit);
+      // skriver ut nya arrayen i konsollen
+
+      alert(`Demo slice: ` + demoSplit.slice(0, 5));
+      /* väljer ut ett intervall av vilka arrayposter som ska visas. I detta
+      exempel väljs att visa första posten fram till 4e. Post 5 och över plockas bort
+      från visningen. Ursprungsarrayen förändras inte */
+      console.log(demoSplit.slice(0, 5));
+      // visar valt intervall från arrayen i konsollen
+
+      alert(`Demo join: ` + demoSplit.join(" "));
+      /* slår samman posterna i arrayen till en string (med ett mellanslag mellan 
+      varje post eftersom jag specifierat detta) */
+      console.log(demoSplit.join(" "));
+      // visar sammanslagen array i konsollen
+
+    </script>
+  </body>
+</html>

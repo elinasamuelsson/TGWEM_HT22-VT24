@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head> </head>
+  <body>
+    <button onclick="julhalsning()">Tryck!</button>
+    <script type="text/JavaScript">
+      /* hjälp med lösning från
+      https://bobbyhadz.com/blog/javascript-capitalize-first-letter-of-each-word-in-array */
+
+      function julhalsning() {
+        const ordArray = ["God", "och", "JUL", "Gott", "år", "Nytt"],
+        storBokstav = ord.map((element) => {
+          return element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+          /* om element.slice inte finns med tas allt förutom första bokstaven bort från arrayen */
+        });
+
+        alert(`${storBokstav[0]} ${storBokstav[2]} ${storBokstav[1]} ${storBokstav[3]} ${storBokstav[5]} ${storBokstav[4]}`);
+      }
+      
+    </script>
+  </body>
+</html>

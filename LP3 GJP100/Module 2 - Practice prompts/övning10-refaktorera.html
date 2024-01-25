@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 10</title>
+  </head>
+  <body>
+    <form name="betygArkiv" action="javascript:hittaBetyg()" method="get">
+      <label for="elev">Vems betyg vill du hämta?</label> <br />
+      <input type="text" id="elev" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px">Hämta betyg!</button>
+    </form>
+    <form name="eleverArkiv" action="javascript:hittaElev()" method="get">
+      <label for="betygAttKontrollera"
+        >Vilket betyg vill du sammanställa namnen för?</label
+      >
+      <br />
+      <input type="text" id="betygAttKontrollera" style="margin-bottom: 5px" />
+      <br />
+
+      <button type="submit" style="margin-bottom: 5px">Hämta betyg!</button>
+    </form>
+    <script type="text/JavaScript">
+
+      const namn = ["Klara", "Andrea", "Emil", "Sarah", "Alicia", "Victor", "Thomas", "Robert"],
+      betyg = ["A", "B", "C", "A", "D", "C", "E", "E"];
+
+      function hittaBetyg() {
+        const elev = document.getElementById('elev').value,
+        betygOrdning = namn.indexOf(elev);
+
+        if (betygOrdning >= 0) {
+          alert(betyg[betygOrdning]);
+        }
+
+        else {
+          alert("Något gick fel, försök igen.");
+        }
+      }
+
+      function hittaElev() {
+        const betygAttKontrollera = document.getElementById('betygAttKontrollera').value.toUpperCase();
+
+        if (betygAttKontrollera === "A") {
+            const elevArrayAttSanda = [namn[0], namn[3]];
+            alert(elevArrayAttSanda);
+        }
+
+        else if (betygAttKontrollera === "B") {
+            const elevArrayAttSanda = [namn[1]];
+            alert(elevArrayAttSanda);
+        }
+
+        else if (betygAttKontrollera === "C") {
+            const elevArrayAttSanda = [namn[2], namn[5]];
+            alert(elevArrayAttSanda);
+        }
+
+        else if (betygAttKontrollera === "D") {
+            const elevArrayAttSanda = [namn[4]];
+            alert(elevArrayAttSanda);
+        }
+
+        else if (betygAttKontrollera === "E") {
+            const elevArrayAttSanda = [namn[6], namn[7]];
+            alert(elevArrayAttSanda);
+        }
+
+        else {
+            alert("Något gick fel, försök igen.");
+        }
+      }
+      
+    </script>
+  </body>
+</html>

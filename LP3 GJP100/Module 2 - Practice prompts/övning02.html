@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Övning 2</title>
+  </head>
+  <body>
+    <form name="kalkyl" action="javascript:korKalkyl()" method="get">
+      <label for="talA">Första talet</label> <br />
+      <input type="text" id="talA" style="margin-bottom: 5px" /> <br />
+
+      <label for="talB">Andra talet</label> <br />
+      <input type="text" id="talB" style="margin-bottom: 5px" /> <br />
+
+      <button type="submit" style="margin-bottom: 5px">Beräkna!</button> <br />
+
+      <label for="resultatSumma">Summa</label> <br />
+      <input type="text" id="resultatSumma" /> <br />
+
+      <label for="resultatProdukt">Produkt</label> <br />
+      <input type="text" id="resultatProdukt" />
+    </form>
+    <!-- formulär att hämta nummer från -->
+
+    <script type="text/JavaScript">
+
+      function korKalkyl() {
+      // funktion med två nästade funktioner
+        const talA = parseFloat(document.getElementById('talA').value),
+        talB = parseFloat(document.getElementById('talB').value);
+        //hämta värden att addera och multiplicera
+
+        summa();
+        produkt();
+        // kallar på båda funktionerna som ska räkna ut och skicka iväg resultatet
+
+        function summa() {
+        // räknar ut och skickar iväg summan till ett väntande inputfält
+          const resultatSumma = talA + talB;
+          document.getElementById('resultatSumma').value = resultatSumma;
+        }
+
+        function produkt() {
+        // räknar ut och skickar iväg produkten till ett väntande inputfält
+          const resultatProdukt = talA * talB;
+          document.getElementById('resultatProdukt').value = resultatProdukt;
+        }
+      }
+      
+    </script>
+  </body>
+</html>

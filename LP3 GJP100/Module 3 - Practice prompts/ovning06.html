@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <button onclick="minNamespace.klick()">Klicka på mig!</button>
+    <!-- onclick för att kalla på funktionen -->
+    <div>
+      <p id="target"></p>
+      <!-- paragraf med ett id så att jag kan identifiera mitt "mål" på ett enkelt sätt -->
+    </div>
+    <script>
+      
+      const minNamespace = {
+        antalKlick: 0,
+        klick: function() {
+        
+            this.antalKlick += 1;
+            // varje gång funktionen kallas läggs ett till i variabeln antalKlick som ligger inom samma namespace
+
+            const targetPara = document.getElementById("target");
+            // hitta målet i HTML-koden
+            targetPara.innerHTML = `Du har klickat på knappen ${this.antalKlick} gånger.`;
+            // ändra innehållet i paragrafen
+        
+        },
+      };
+
+    </script>
+  </body>
+</html>
