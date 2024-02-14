@@ -1,0 +1,47 @@
+/*
+    * Theme Name: Hello Elementor Childtema
+    * Description: Childtema till Hello Elementor enligt Checkpoint 3
+    * Author: Elina Samuelsson
+    * Template: hello-elementor
+*/
+
+@font-face {
+  font-family: "ChocolateValentine";
+  src: url(./fonts/chocolate_valentine.woff) format("woff");
+}
+
+body {
+  background: rgb(255, 248, 165);
+  background: linear-gradient(90deg, #fff8a5 0%, #fffbe7 50%);
+}
+
+article.post {
+  margin-bottom: 4rem;
+}
+
+article.post h2.entry-title {
+  font-family: "ChocolateValentine";
+  font-size: 3rem;
+}
+
+article.post p {
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 1.5rem;
+}
+
+footer.container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1.5rem;
+  background-color: #333;
+  color: #bbb;
+}
+
+footer div.foot {
+  max-width: 30%;
+  margin: auto;
+}
+
+h3.widget-title {
+  color: #d10e49;
+}
