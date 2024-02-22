@@ -1,0 +1,1794 @@
+[
+  {
+    "Diluc": [
+      {
+        "rank": "5",
+        "vision": "Pyro",
+        "constellation": "1",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Sacrificial Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "4",
+                "weaponLevel": "70",
+                "refinement": "3"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Witch's Flower of Blaze",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Witch's Ever-Burning Plume",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Berserker's Timepiece",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Instructor's Tea Cup",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "12"
+              },
+              {
+                "artifactName": "Berserker's Battle Mask",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "8"
+      }
+    ]
+  },
+  {
+    "Mona": [
+      {
+        "rank": "5",
+        "vision": "Hydro",
+        "constellation": "1",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Favonius Codex",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "weaponLevel": "80",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Royal Flora",
+                "artifactType": "Flower",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Berserker's Indigo Feather",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "12"
+              },
+              {
+                "artifactName": "Royal Pocket Watch",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Bloodstained Chevalier's Goblet",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Berserker's Battle Mask",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "8"
+      }
+    ]
+  },
+  {
+    "Lisa": [
+      {
+        "rank": "4",
+        "vision": "Electro",
+        "constellation": "0",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Thrilling Tales of Dragon Slayers",
+                "weaponType": "Catalyst",
+                "weaponRank": "3",
+                "weaponLevel": "70",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "8"
+      }
+    ]
+  },
+  {
+    "Diona": [
+      {
+        "rank": "4",
+        "vision": "Cryo",
+        "constellation": "1",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Favonius Warbow",
+                "weaponType": "Bow",
+                "weaponRank": "4",
+                "weaponLevel": "70",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Labyrinth Wayfarer",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Ceremonial War-Plume",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Instructor's Pocket Watch",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Wanderer's String-Kettle",
+                "artifactType": "Goblet",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "General's Ancient Helm",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "8"
+      }
+    ]
+  },
+  {
+    "Wriothesley": [
+      {
+        "rank": "5",
+        "vision": "Cryo",
+        "constellation": "0",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "The Widsith",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "weaponLevel": "80",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Hunter's Brooch",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Masterpiece's Overture",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Storm Cage",
+                "artifactType": "Timepiece",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "Forgotten Vessel",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Veteran's Visage",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "6"
+      }
+    ]
+  },
+  {
+    "Sucrose": [
+      {
+        "rank": "4",
+        "vision": "Anemo",
+        "constellation": "0",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Sacrificial Fragments",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "level": "70",
+                "refinement": "3"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Magnificent Tsuba",
+                "artifactType": "Flower",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "Bard's Arrow Feather",
+                "artifactType": "Plume",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "Viridescent Venerer's Determination",
+                "artifactType": "Timepiece",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "Wanderer's String-Kettle",
+                "artifactType": "Goblet",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Viridescent Venerer's Diadem",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "6"
+      }
+    ]
+  },
+  {
+    "Traveler": [
+      {
+        "rank": "5",
+        "vision": "Dendro",
+        "constellation": "5",
+        "level": "80",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Prototype Rancour",
+                "weaponType": "Sword",
+                "weaponRank": "4",
+                "level": "60",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": ""
+      }
+    ]
+  },
+  {
+    "Chongyun": [
+      {
+        "rank": "4",
+        "vision": "Cryo",
+        "constellation": "3",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Debate Club",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "7"
+      }
+    ]
+  },
+  {
+    "Neuvillette": [
+      {
+        "rank": "5",
+        "vision": "Hydro",
+        "constellation": "0",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Prototype Amber",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "level": "70",
+                "refinement": "3"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Hunter's Brooch",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Bard's Arrow Feather",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Moment of Judgment",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Forgotten Vessel",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Veteran's Visage",
+                "artifactType": "Circlet",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              }
+            ]
+          }
+        ],
+        "friendship": "4"
+      }
+    ]
+  },
+  {
+    "Neuvillette": [
+      {
+        "rank": "5",
+        "vision": "Hydro",
+        "constellation": "0",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Prototype Amber",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "level": "70",
+                "refinement": "3"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Hunter's Brooch",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Bard's Arrow Feather",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Moment of Judgment",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Forgotten Vessel",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Veteran's Visage",
+                "artifactType": "Circlet",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              }
+            ]
+          }
+        ],
+        "friendship": "4"
+      }
+    ]
+  },
+  {
+    "Kaveh": [
+      {
+        "rank": "4",
+        "vision": "Dendro",
+        "constellation": "0",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Favonius Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "4",
+                "level": "70",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "2"
+      }
+    ]
+  },
+  {
+    "Hu Tao": [
+      {
+        "rank": "5",
+        "vision": "Pyro",
+        "constellation": "0",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Dragon's Bane",
+                "weaponType": "Polearm",
+                "weaponRank": "4",
+                "level": "50",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Baizhu": [
+      {
+        "rank": "5",
+        "vision": "Dendro",
+        "constellation": "0",
+        "level": "70",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Ballad of the Boundless Blue",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "level": "80",
+                "refinement": "5"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Dreaming Steelbloom",
+                "artifactType": "Flower",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Scholar of Vines",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Concert's Final Hour",
+                "artifactType": "Timepiece",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Berserker's Bone Goblet",
+                "artifactType": "Goblet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Exile's Circlet",
+                "artifactType": "Circlet",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              }
+            ]
+          }
+        ],
+        "friendship": "2"
+      }
+    ]
+  },
+  {
+    "Xiangling": [
+      {
+        "rank": "4",
+        "vision": "Pyro",
+        "constellation": "0",
+        "level": "60",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Favonius Lance",
+                "weaponType": "Polearm",
+                "weaponRank": "4",
+                "level": "40",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Magnificent Tsuba",
+                "artifactType": "Flower",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Sundered Feather",
+                "artifactType": "Plume",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Golden Era's Prelude",
+                "artifactType": "Timepiece",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Golden Night's Bustle",
+                "artifactType": "Goblet",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Golden Troupe's Reward",
+                "artifactType": "Circlet",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              }
+            ]
+          }
+        ],
+        "friendship": "3"
+      }
+    ]
+  },
+  {
+    "Beidou": [
+      {
+        "rank": "4",
+        "vision": "Electro",
+        "constellation": "0",
+        "level": "60",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "White Iron Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "50",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Ningguang": [
+      {
+        "rank": "4",
+        "vision": "Geo",
+        "constellation": "0",
+        "level": "60",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Eye of Perception",
+                "weaponType": "Catalyst",
+                "weaponRank": "4",
+                "level": "50",
+                "refinement": "2"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Xingqiu": [
+      {
+        "rank": "4",
+        "vision": "Hydro",
+        "constellation": "3",
+        "level": "50",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Sacrificial Sword",
+                "weaponType": "Sword",
+                "weaponRank": "4",
+                "level": "40",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "Royal Flora",
+                "artifactType": "Flower",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Royal Plume",
+                "artifactType": "Plume",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              },
+              {
+                "artifactName": "Moment of Judgment",
+                "artifactType": "Timepiece",
+                "artifactRank": "4",
+                "artifactLevel": "16"
+              },
+              {
+                "artifactName": "Royal Silver Urn",
+                "artifactType": "Goblet",
+                "artifactRank": "5",
+                "artifactLevel": "20"
+              },
+              {
+                "artifactName": "Royal Masque",
+                "artifactType": "Circlet",
+                "artifactRank": "5",
+                "artifactLevel": "0"
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Noelle": [
+      {
+        "rank": "4",
+        "vision": "Geo",
+        "constellation": "3",
+        "level": "50",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Bloodtainted Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "50",
+                "refinement": "5"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Sayu": [
+      {
+        "rank": "4",
+        "vision": "Anemo",
+        "constellation": "1",
+        "level": "50",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Prototype Archaic",
+                "weaponType": "Claymore",
+                "weaponRank": "4",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Collei": [
+      {
+        "rank": "4",
+        "vision": "Dendro",
+        "constellation": "2",
+        "level": "50",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Slingshot",
+                "weaponType": "Bow",
+                "weaponRank": "3",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Amber": [
+      {
+        "rank": "4",
+        "vision": "Pyro",
+        "constellation": "1",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Raven Bow",
+                "weaponType": "Bow",
+                "weaponRank": "3",
+                "level": "20",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "2"
+      }
+    ]
+  },
+  {
+    "Barbara": [
+      {
+        "rank": "4",
+        "vision": "Hydro",
+        "constellation": "1",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Apprentice's Notes",
+                "weaponType": "Catalyst",
+                "weaponRank": "1",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Kaeya": [
+      {
+        "rank": "4",
+        "vision": "Cryo",
+        "constellation": "0",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Sword of Descension",
+                "weaponType": "Sword",
+                "weaponRank": "4",
+                "level": "20",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Thoma": [
+      {
+        "rank": "4",
+        "vision": "Pyro",
+        "constellation": "4",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Black Tassel",
+                "weaponType": "Polearm",
+                "weaponRank": "3",
+                "level": "1",
+                "refinement": "2"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Dori": [
+      {
+        "rank": "4",
+        "vision": "Electro",
+        "constellation": "4",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Ferrous Shadow",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "40",
+                "refinement": "5"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Lynette": [
+      {
+        "rank": "4",
+        "vision": "Anemo",
+        "constellation": "2",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "The Flute",
+                "weaponType": "Sword",
+                "weaponRank": "4",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Freminet": [
+      {
+        "rank": "4",
+        "vision": "Cryo",
+        "constellation": "4",
+        "level": "40",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Bloodtainted Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "50",
+                "refinement": "5"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Dehya": [
+      {
+        "rank": "5",
+        "vision": "Pyro",
+        "constellation": "0",
+        "level": "20",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Waster Greatsword",
+                "weaponType": "Claymore",
+                "weaponRank": "1",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Razor": [
+      {
+        "rank": "4",
+        "vision": "Electro",
+        "constellation": "0",
+        "level": "20",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Debate Club",
+                "weaponType": "Claymore",
+                "weaponRank": "3",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Yanfei": [
+      {
+        "rank": "4",
+        "vision": "Pyro",
+        "constellation": "0",
+        "level": "20",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Apprentice's Notes",
+                "weaponType": "Catalyst",
+                "weaponRank": "1",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Yun Jin": [
+      {
+        "rank": "4",
+        "vision": "Geo",
+        "constellation": "0",
+        "level": "20",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Iron Point",
+                "weaponType": "Polearm",
+                "weaponRank": "2",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  },
+  {
+    "Charlotte": [
+      {
+        "rank": "4",
+        "vision": "Cryo",
+        "constellation": "4",
+        "level": "20",
+        "gear": [
+          {
+            "weapon": [
+              {
+                "weaponName": "Apprentice's Notes",
+                "weaponType": "Catalyst",
+                "weaponRank": "1",
+                "level": "1",
+                "refinement": "1"
+              }
+            ],
+            "artifacts": [
+              {
+                "artifactName": "",
+                "artifactType": "Flower",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Plume",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Timepiece",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Goblet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              },
+              {
+                "artifactName": "",
+                "artifactType": "Circlet",
+                "artifactRank": "",
+                "artifactLevel": ""
+              }
+            ]
+          }
+        ],
+        "friendship": "1"
+      }
+    ]
+  }
+]

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<genshinRoster>
+    <character>
+        <name>Diluc</name>
+        <rank>5</rank>
+        <vision>Pyro</vision>
+        <constellation>1</constellation>
+        <level>80</level>
+        <gear>
+            <weapon>
+                <weaponName>Sacrificial Greatsword</weaponName>
+                <weaponType>Claymore</weaponType>
+                <weaponRank>4</weaponRank>
+                <weaponLevel>70</weaponLevel>
+                <refinement>3</refinement>
+            </weapon>
+            <artifact>
+                <artifactName>Witch's Flower of Blaze</artifactName>
+                <artifactType>Flower</artifactType>
+                <artifactRank>4</artifactRank>
+                <artifactLevel>16</artifactLevel>
+            </artifact>
+            <artifact>
+                <artifactName>Witch's Ever-Burning Plume</artifactName>
+                <artifactType>Plume</artifactType>
+                <artifactRank>4</artifactRank>
+                <artifactLevel>16</artifactLevel>
+            </artifact>
+            <artifact>
+                <artifactName>Berserker's Timepiece</artifactName>
+                <artifactType>Timepiece</artifactType>
+                <artifactRank>4</artifactRank>
+                <artifactLevel>16</artifactLevel>
+            </artifact>
+            <artifact>
+                <artifactName>Instructor's Tea Cup</artifactName>
+                <artifactType>Goblet</artifactType>
+                <artifactRank>4</artifactRank>
+                <artifactLevel>12</artifactLevel>
+            </artifact>
+            <artifact>
+                <artifactName>Berserker's Battle Mask</artifactName>
+                <artifactType>Circlet</artifactType>
+                <artifactRank>4</artifactRank>
+                <artifactLevel>16</artifactLevel>
+            </artifact>
+        </gear>
+        <friendship>8</friendship>
+    </character>
+</genshinRoster>
