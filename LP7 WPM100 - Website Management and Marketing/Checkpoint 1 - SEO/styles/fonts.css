@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+}
+
+h1 a {
+  font-size: 3rem;
+  font-family: "Alegreya Sans SC", sans-serif;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-style: italic;
+}
+
+nav {
+  font-size: x-large;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: burlywood;
+}
+
+nav ul li a:hover {
+  font-weight: bold;
+  color: #cd7f32;
+}
+
+#active-link {
+  font-style: oblique;
+}
+
+.main-index p,
+.main p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+.main-index p {
+  text-align: center;
+}
+
+.main p {
+  text-align: left;
+}
+
+label {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+}
+
+.footer,
+.footer-index {
+  font-size: small;
+  font-family: "Montserrat", sans-serif;
+  color: grey;
+  text-align: center;
+}
+
+.footer a,
+.footer-index a {
+  text-decoration: none;
+}
+
+.footer i,
+.footer-index i {
+  color: grey;
+}

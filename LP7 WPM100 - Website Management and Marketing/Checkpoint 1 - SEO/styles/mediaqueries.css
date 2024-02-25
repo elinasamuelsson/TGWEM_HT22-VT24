@@ -1,0 +1,105 @@
+@media screen and (min-width: 1920px) {
+  #hero-image {
+    background-image: url("../images/smedjeverktygFonster_1920x1080.webp");
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  #hero-image {
+    background-image: url("../images/smedjeverktygFonster_1440x810.webp");
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1440px) {
+  #hero-image {
+    background-image: url("../images/smedjeverktygFonster_1280x720.webp");
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  #hero-image {
+    background-image: url("../images/smedjeverktygFonster_1024x576.webp");
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    font-size: xx-large;
+  }
+
+  .nav-index {
+    margin-bottom: 5rem;
+    position: static;
+  }
+
+  .main-index {
+    position: static;
+  }
+
+  .footer-index {
+    position: static;
+    justify-self: flex-end;
+  }
+
+  .shadow-bubble {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shadow-bubble .portrait {
+    float: none;
+    width: 70vw;
+    padding: 2rem 0 0 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #hero-image {
+    background-image: url("../images/smedjeverktygFonster_staende.webp");
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav {
+    font-size: xx-large;
+  }
+
+  .nav-index {
+    margin-bottom: 5rem;
+    position: static;
+  }
+
+  .main-index {
+    position: static;
+  }
+
+  .footer-index {
+    position: static;
+  }
+
+  .shadow-bubble {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shadow-bubble .portrait {
+    float: none;
+    width: 70vw;
+    padding: 2rem 0 0 0;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+}

@@ -1,0 +1,4 @@
+# robots.txt file of https://webbkurs.ei.hv.se/~elsa0047/birgittasklensmide/
+User-agent: *
+Disallow:
+Sitemap: https://webbkurs.ei.hv.se/~elsa0047/birgittasklensmide/sitemap.xml

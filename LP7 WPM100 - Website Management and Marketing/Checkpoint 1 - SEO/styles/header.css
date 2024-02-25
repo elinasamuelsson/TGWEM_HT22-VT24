@@ -1,0 +1,28 @@
+.nav-index {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav ul li {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+nav ul li a:hover {
+  border-bottom: 1px solid #cd7f32;
+  transition: all 0.1s ease-in-out;
+}
